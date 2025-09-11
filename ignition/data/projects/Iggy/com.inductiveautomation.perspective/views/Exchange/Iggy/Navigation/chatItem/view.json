@@ -1,0 +1,319 @@
+{
+  "custom": {},
+  "params": {
+    "chat_id": "104-rtyson",
+    "description": "teste",
+    "example": false,
+    "id": 104,
+    "selected": true,
+    "username": "rtyson"
+  },
+  "propConfig": {
+    "params.chat_id": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.description": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.example": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.id": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.selected": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.username": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 43,
+      "width": 372
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Image",
+          "tooltip": {
+            "enabled": true
+          }
+        },
+        "position": {
+          "basis": "40px"
+        },
+        "propConfig": {
+          "meta.tooltip.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.chat_id"
+              },
+              "type": "property"
+            }
+          },
+          "props.source": {
+            "binding": {
+              "config": {
+                "path": "view.params.username"
+              },
+              "transforms": [
+                {
+                  "code": "\tret \u003d \u0027/system/images/\u0027\n\tif value !\u003d \u0027admin\u0027:\n\t\tret+\u003dvalue+\u0027.png\u0027\n\telse:\n\t\tret+\u003d\u0027iggy.png\u0027\n\treturn ret",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "fit": {
+            "mode": "contain"
+          },
+          "style": {
+            "borderBottomLeftRadius": "40px",
+            "borderBottomRightRadius": "40px",
+            "borderTopLeftRadius": "40px",
+            "borderTopRightRadius": "40px",
+            "marginRight": "5px"
+          }
+        },
+        "type": "ia.display.image"
+      },
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\t\n\t#sent to main chat page on root container\n\tmessageType \u003d \u0027chat_id\u0027\n\tpayload \u003d {\n\t\t\u0027chat_id\u0027: self.view.params.chat_id\n\t}\n\tsystem.perspective.sendMessage(messageType, payload)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "basis": "27px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.description"
+              },
+              "transforms": [
+                {
+                  "code": "\treturn value[:30]",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tpayload \u003d {\n\t\t\u0027id\u0027: self.view.params.id,\n\t\t\u0027example\u0027: self.view.params.example\n\t}\n\tsystem.perspective.sendMessage(\u0027toggle-lock\u0027, payload, \u0027view\u0027)"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Icon_example",
+              "tooltip": {
+                "enabled": true,
+                "text": "Click to toggle chat lock"
+              }
+            },
+            "position": {
+              "basis": "25px"
+            },
+            "propConfig": {
+              "props.color": {
+                "binding": {
+                  "config": {
+                    "expression": "if({view.params.example},\u0027green\u0027,\u0027\u0027)"
+                  },
+                  "type": "expr"
+                }
+              },
+              "props.path": {
+                "binding": {
+                  "config": {
+                    "expression": "if({view.params.example},\u0027material/lock\u0027,\u0027material/lock_open\u0027)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "classes": "icon"
+              }
+            },
+            "type": "ia.display.icon"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "    parameters \u003d {\n    \t\u0027id\u0027: self.view.params.id\n    }\n    system.db.execUpdate(\u0027Exchange/Iggy/Chat/ignition_chat_history_delete\u0027, parameters)\n    \n    system.perspective.sendMessage(\u0027refresh\u0027, {\"type\":\"summary\"})\n    system.perspective.sendMessage(\u0027chat_id\u0027, {\u0027chat_id\u0027:\u0027\u0027})"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Icon_delete",
+              "tooltip": {
+                "enabled": true,
+                "text": "Delete Chat"
+              }
+            },
+            "position": {
+              "basis": "25px"
+            },
+            "propConfig": {
+              "position.display": {
+                "binding": {
+                  "config": {
+                    "expression": "!{view.params.example}"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "path": "material/delete",
+              "style": {
+                "classes": "icon"
+              }
+            },
+            "type": "ia.display.icon"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "75px"
+        },
+        "props": {
+          "justify": "flex-end"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "contextMenu": {
+        "enabled": true,
+        "items": [
+          {
+            "children": [],
+            "icon": {
+              "color": "",
+              "path": "",
+              "style": {}
+            },
+            "link": {
+              "target": "self",
+              "url": ""
+            },
+            "message": {
+              "payload": {},
+              "scope": "view",
+              "type": "toggle-lock"
+            },
+            "method": {
+              "name": "",
+              "params": {}
+            },
+            "style": {
+              "classes": ""
+            },
+            "text": "Toggle Lock",
+            "type": "message"
+          }
+        ]
+      },
+      "name": "root"
+    },
+    "propConfig": {
+      "meta.contextMenu.items[0].message.payload.example": {
+        "binding": {
+          "config": {
+            "path": "view.params.example"
+          },
+          "type": "property"
+        }
+      },
+      "meta.contextMenu.items[0].message.payload.id": {
+        "binding": {
+          "config": {
+            "path": "view.params.id"
+          },
+          "type": "property"
+        }
+      },
+      "props.style.backgroundColor": {
+        "binding": {
+          "config": {
+            "expression": "if({view.params.selected},\u0027--neutral-30\u0027,\u0027\u0027)"
+          },
+          "type": "expr"
+        }
+      }
+    },
+    "props": {
+      "style": {
+        "classes": "icon"
+      }
+    },
+    "scripts": {
+      "customMethods": [],
+      "extensionFunctions": null,
+      "messageHandlers": [
+        {
+          "messageType": "chat_id",
+          "pageScope": true,
+          "script": "\t# implement your handler here\n\tif self.view.params.chat_id \u003d\u003d payload[\u0027chat_id\u0027]:\n\t\tself.view.params.selected \u003d True\n\telse:\n\t\tself.view.params.selected \u003d False",
+          "sessionScope": false,
+          "viewScope": false
+        },
+        {
+          "messageType": "toggle-lock",
+          "pageScope": false,
+          "script": "\t# implement your handler here\n\tnewValue \u003d not payload[\u0027example\u0027]\n\tparams \u003d {\n\t\t\u0027id\u0027: payload[\u0027id\u0027],\n\t\t\u0027example\u0027: newValue\n\t}\n\tres \u003d system.db.execUpdate(\u0027Exchange/Iggy/Chat/ignition_chat_history_update_example\u0027, params)\n\t\n\tsystem.perspective.sendMessage(\u0027refresh\u0027, {\u0027type\u0027:\u0027summary\u0027})",
+          "sessionScope": false,
+          "viewScope": true
+        }
+      ]
+    },
+    "type": "ia.container.flex"
+  }
+}

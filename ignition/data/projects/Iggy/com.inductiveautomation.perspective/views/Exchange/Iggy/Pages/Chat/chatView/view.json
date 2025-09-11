@@ -1,0 +1,171 @@
+{
+  "custom": {},
+  "params": {
+    "content": "",
+    "event_type": "",
+    "interaction_number": "",
+    "item_id": "",
+    "message_type": "",
+    "session_id": "",
+    "sort_group": "",
+    "timestamp": ""
+  },
+  "propConfig": {
+    "params.content": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.event_type": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.interaction_number": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.item_id": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.message_type": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.session_id": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.sort_group": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.timestamp": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 332,
+      "width": 467
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "basis": "32px"
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "expression": "{view.params.message_type} \u003d \u0027human\u0027"
+              },
+              "type": "expr"
+            }
+          },
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.timestamp"
+              },
+              "transforms": [
+                {
+                  "formatType": "datetime",
+                  "formatValue": {
+                    "date": "medium",
+                    "time": "medium"
+                  },
+                  "type": "format"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "fontSize": "8px"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView"
+        },
+        "position": {
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.content": {
+            "binding": {
+              "config": {
+                "path": "view.params.content"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.event_type": {
+            "binding": {
+              "config": {
+                "path": "view.params.event_type"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.item_id": {
+            "binding": {
+              "config": {
+                "path": "view.params.item_id"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.session_id": {
+            "binding": {
+              "config": {
+                "path": "view.params.session_id"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.timestamp": {
+            "binding": {
+              "config": {
+                "path": "view.params.timestamp"
+              },
+              "type": "property"
+            }
+          },
+          "props.path": {
+            "binding": {
+              "config": {
+                "path": "view.params.event_type"
+              },
+              "transforms": [
+                {
+                  "code": "\tif value\u003d\u003d\u0027message\u0027:\n\t\tret \u003d \u0027Exchange/Iggy/Pages/Chat/chatBubble\u0027\n\telse:\n\t\tret \u003d \u0027Exchange/Iggy/Pages/Artifacts/\u0027+value+\u0027/Viewer\u0027\n\treturn ret",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

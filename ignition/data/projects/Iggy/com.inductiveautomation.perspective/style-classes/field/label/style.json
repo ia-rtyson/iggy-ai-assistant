@@ -1,0 +1,13 @@
+{
+  "base": {
+    "style": {
+      "color": "var(--neutral-60)",
+      "fontSize": "12px",
+      "fontWeight": "bold",
+      "lineHeight": "16px",
+      "paddingLeft": "4px",
+      "paddingRight": "4px",
+      "textAlign": "left"
+    }
+  }
+}

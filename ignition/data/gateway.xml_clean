@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Context Settings</comment>
+<entry key="gateway.port">8088</entry>
+<entry key="gateway.sslport">8043</entry>
+<entry key="gateway.acceptCount">100</entry>
+<entry key="gateway.maxThreads">300</entry>
+<entry key="gateway.maxKeepAliveRequests">200</entry>
+<entry key="gateway.connectionTimeout">60000</entry>
+<entry key="gateway.keepAliveTimeout">60000</entry>
+<entry key="context.props.version">3</entry>
+<entry key="context.startup.useautobackups">true</entry>
+<entry key="localdb.autobackup.count">5</entry>
+<entry key="localdb.faultbackup.count">3</entry>
+<entry key="localdb.autobackup.delay">60</entry>
+<entry key="gateway.metroSSLPort">8060</entry>
+</properties>

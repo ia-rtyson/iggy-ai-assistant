@@ -1,0 +1,250 @@
+{
+  "alias": "IT",
+  "id": "37e58452-b92f-4dd0-ae5f-04b0848286dd",
+  "labels": {
+    "BACKSPACE": "Backsp",
+    "CANCEL": "Cancel",
+    "SHIFT": "Shift",
+    "SPACE": "Space",
+    "SUBMIT": "Enter"
+  },
+  "name": "it_qwerty",
+  "rows": [
+    [
+      {
+        "lowercase": "q",
+        "uppercase": "Q"
+      },
+      {
+        "lowercase": "w",
+        "uppercase": "W"
+      },
+      {
+        "lowercase": "e",
+        "uppercase": "E"
+      },
+      {
+        "lowercase": {
+          "accents": [
+            "ɜ",
+            "ę",
+            "ē",
+            "ê",
+            "è",
+            "é",
+            "ë",
+            "ə"
+          ],
+          "character": "ė"
+        },
+        "uppercase": {
+          "accents": [
+            "Ɜ",
+            "Ę",
+            "Ē",
+            "Ê",
+            "È",
+            "É",
+            "Ë",
+            "Ə"
+          ],
+          "character": "Ė"
+        }
+      },
+      {
+        "lowercase": "r",
+        "uppercase": "R"
+      },
+      {
+        "lowercase": "t",
+        "uppercase": "T"
+      },
+      {
+        "lowercase": "y",
+        "uppercase": "Y"
+      },
+      {
+        "lowercase": {
+          "accents": [
+            "ū",
+            "û",
+            "ù",
+            "ú",
+            "ü"
+          ],
+          "character": "u"
+        },
+        "uppercase": {
+          "accents": [
+            "Ū",
+            "Û",
+            "Ù",
+            "Ú",
+            "Ü"
+          ],
+          "character": "U"
+        }
+      },
+      {
+        "lowercase": {
+          "accents": [
+            "ī",
+            "ï",
+            "į",
+            "î",
+            "ì",
+            "í"
+          ],
+          "character": "i"
+        },
+        "uppercase": {
+          "accents": [
+            "Ī",
+            "Ï",
+            "Į",
+            "Î",
+            "Ì",
+            "Í"
+          ],
+          "character": "I"
+        }
+      },
+      {
+        "lowercase": {
+          "accents": [
+            "º",
+            "ō",
+            "ø",
+            "œ",
+            "õ",
+            "ö",
+            "ô",
+            "ó",
+            "ò"
+          ],
+          "character": "o"
+        },
+        "uppercase": {
+          "accents": [
+            "º",
+            "Ō",
+            "Ø",
+            "Œ",
+            "Õ",
+            "Ö",
+            "Ô",
+            "Ó",
+            "Ò"
+          ],
+          "character": "O"
+        }
+      },
+      {
+        "lowercase": "p",
+        "uppercase": "P"
+      },
+      "BACKSPACE"
+    ],
+    [
+      {
+        "lowercase": {
+          "accents": [
+            "ã",
+            "å",
+            "ā",
+            "ª",
+            "à",
+            "á",
+            "â",
+            "ä",
+            "æ"
+          ],
+          "character": "a"
+        },
+        "uppercase": {
+          "accents": [
+            "Ã",
+            "Å",
+            "Ā",
+            "ª",
+            "À",
+            "Á",
+            "Â",
+            "Ä",
+            "Æ"
+          ],
+          "character": "A"
+        }
+      },
+      {
+        "lowercase": "s",
+        "uppercase": "S"
+      },
+      {
+        "lowercase": "d",
+        "uppercase": "D"
+      },
+      {
+        "lowercase": "f",
+        "uppercase": "F"
+      },
+      {
+        "lowercase": "g",
+        "uppercase": "G"
+      },
+      {
+        "lowercase": "h",
+        "uppercase": "H"
+      },
+      {
+        "lowercase": "j",
+        "uppercase": "J"
+      },
+      {
+        "lowercase": "k",
+        "uppercase": "K"
+      },
+      {
+        "lowercase": "l",
+        "uppercase": "L"
+      },
+      "SUBMIT"
+    ],
+    [
+      "SHIFT",
+      {
+        "lowercase": "z",
+        "uppercase": "Z"
+      },
+      {
+        "lowercase": "x",
+        "uppercase": "X"
+      },
+      {
+        "lowercase": "c",
+        "uppercase": "C"
+      },
+      {
+        "lowercase": "v",
+        "uppercase": "V"
+      },
+      {
+        "lowercase": "b",
+        "uppercase": "B"
+      },
+      {
+        "lowercase": "n",
+        "uppercase": "N"
+      },
+      {
+        "lowercase": "m",
+        "uppercase": "M"
+      },
+      "SHIFT"
+    ]
+  ],
+  "supportedLanguages": [
+    "it"
+  ],
+  "title": "Italiano"
+}

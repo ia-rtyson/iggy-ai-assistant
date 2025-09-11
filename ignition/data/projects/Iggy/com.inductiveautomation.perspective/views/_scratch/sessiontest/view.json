@@ -1,0 +1,244 @@
+{
+  "custom": {
+    "key": [
+      {
+        "activePages": 1,
+        "authorized": true,
+        "clientAddress": "10.10.55.14",
+        "id": "a177ae27-b6cf-4f03-a08a-c964672cf56b",
+        "lastComm": 36421,
+        "pageIds": [
+          "e17554e"
+        ],
+        "project": "Iggy",
+        "recentBytesSent": 23,
+        "sessionScope": "browser",
+        "totalBytesSent": "292691",
+        "uptime": 1028640,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0",
+        "username": "mraybourn"
+      },
+      {
+        "activePages": 3,
+        "authorized": true,
+        "clientAddress": "10.10.55.14",
+        "id": "2803BB1C",
+        "lastComm": 1,
+        "pageIds": [
+          "_scratch/sessiontest",
+          "Exchange/Iggy/Pages/Chat/Chat",
+          "session-props"
+        ],
+        "project": "Iggy",
+        "recentBytesSent": 1344,
+        "sessionScope": "designer",
+        "totalBytesSent": "237247",
+        "uptime": 20632990,
+        "userAgent": "\u003cdesigner\u003e",
+        "username": "mraybourn"
+      },
+      {
+        "activePages": 1,
+        "authorized": true,
+        "clientAddress": "10.10.55.14",
+        "id": "0505ac42-19d3-4b99-ac5d-020dfe618813",
+        "lastComm": 3751,
+        "pageIds": [
+          "2dc4c507"
+        ],
+        "project": "Iggy",
+        "recentBytesSent": 147,
+        "sessionScope": "browser",
+        "totalBytesSent": "3726052",
+        "uptime": 285218,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "username": "mraybourn"
+      }
+    ],
+    "key_1": {
+      "address": "10.10.55.14",
+      "appBar": {
+        "about": {
+          "icon": "",
+          "path": "",
+          "title": ""
+        },
+        "togglePosition": "right"
+      },
+      "auth": {
+        "authenticated": true,
+        "idp": "default",
+        "idpAttributes": {},
+        "securityLevels": [
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [],
+                    "name": "Administrator"
+                  }
+                ],
+                "name": "Roles"
+              }
+            ],
+            "name": "Authenticated"
+          },
+          {
+            "children": [],
+            "name": "SecurityZones"
+          }
+        ],
+        "user": {
+          "email": null,
+          "firstName": "Matthew",
+          "id": "aa13b912-d364-4b73-9126-14dad86d3d1d",
+          "lastName": "Raybourn",
+          "roles": [
+            "Administrator"
+          ],
+          "timestamp": {
+            "$": [
+              "ts",
+              0,
+              1755819200948
+            ],
+            "$ts": 1755819200947
+          },
+          "userName": "mraybourn"
+        }
+      },
+      "bluetooth": {
+        "data": [],
+        "enabled": false,
+        "options": {
+          "filter": {
+            "altBeacon": {
+              "exclusive": false,
+              "uuid": ""
+            },
+            "eddystone": {
+              "exclusive": false,
+              "namespaceID": ""
+            },
+            "enabled": false,
+            "iBeacon": {
+              "exclusive": false,
+              "uuid": ""
+            },
+            "minimumRSSI": 0
+          },
+          "limit": 10,
+          "updateInterval": 1000
+        }
+      },
+      "device": {
+        "accelerometer": {
+          "timestamp": 0,
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "identifier": "",
+        "settings": {
+          "preventSleep": false,
+          "pullToRefresh": true
+        },
+        "timezone": {
+          "id": "America/Los_Angeles",
+          "utcOffset": -7
+        },
+        "type": "designer",
+        "userAgent": "\u003cdesigner\u003e"
+      },
+      "gateway": {
+        "address": "http://192.168.1.52:8043",
+        "connected": true,
+        "timezone": {
+          "id": "America/Denver",
+          "name": "Mountain Standard Time",
+          "utcOffset": -6
+        }
+      },
+      "geolocation": {
+        "data": {
+          "accuracy": null,
+          "altitude": null,
+          "altitudeAccuracy": null,
+          "heading": null,
+          "latitude": null,
+          "longitude": null,
+          "speed": null,
+          "timestamp": null
+        },
+        "enabled": false,
+        "options": {
+          "accuracy": "balanced",
+          "maximumAge": 0
+        },
+        "permissionGranted": null
+      },
+      "googleMapsApiKey": "",
+      "host": "10.10.55.14",
+      "id": "bc25b0d5-868c-4548-b7b3-ac791f6a7692",
+      "lastActivity": null,
+      "locale": "en-US",
+      "offline": {
+        "capable": false,
+        "enabled": false,
+        "language": "",
+        "lastSynced": ""
+      },
+      "pipes": {
+        "autoAppearance": "simple",
+        "overlapGap": 4
+      },
+      "symbols": {
+        "autoAnimationSpeed": 100,
+        "autoAppearance": "simple"
+      },
+      "theme": "dark-cool",
+      "timeZoneId": "America/Denver"
+    }
+  },
+  "params": {},
+  "propConfig": {
+    "custom.key": {
+      "binding": {
+        "config": {
+          "expression": "1"
+        },
+        "transforms": [
+          {
+            "code": "\t\n\treturn system.perspective.getSessionInfo()",
+            "type": "script"
+          }
+        ],
+        "type": "expr"
+      },
+      "persistent": true
+    },
+    "custom.key_1": {
+      "binding": {
+        "config": {
+          "expression": "1"
+        },
+        "transforms": [
+          {
+            "code": "\treturn {k: self.session.props[k] for k in self.session.props}",
+            "type": "script"
+          }
+        ],
+        "type": "expr"
+      },
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

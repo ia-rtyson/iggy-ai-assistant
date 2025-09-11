@@ -1,0 +1,60 @@
+{
+  "custom": {},
+  "events": {
+    "dom": []
+  },
+  "params": {},
+  "position": {},
+  "propConfig": {},
+  "props": {
+    "defaultSize": {
+      "height": 400,
+      "width": 600
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [],
+        "events": {},
+        "meta": {
+          "name": "Label",
+          "position": {
+            "height": 50,
+            "width": 200,
+            "x": 100,
+            "y": 100
+          }
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "bidirectional": false,
+                "fallbackDelay": 2.5,
+                "mode": "direct",
+                "references": {},
+                "tagPath": "[default]Motor RPM"
+              },
+              "type": "tag"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "textAlign": "center"
+          },
+          "text": "Motor RPM:"
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "mode": "fixed"
+    },
+    "type": "ia.container.coord"
+  }
+}

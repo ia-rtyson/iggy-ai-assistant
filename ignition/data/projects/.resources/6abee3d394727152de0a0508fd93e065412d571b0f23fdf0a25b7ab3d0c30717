@@ -1,0 +1,216 @@
+
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 800,
+      "height": 800
+    }
+  },
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex",
+    "children": [
+      {
+        "meta": {
+          "name": "RegistrationForm"
+        },
+        "position": {
+          "basis": "auto",
+          "grow": 1,
+          "shrink": 1
+        },
+        "props": {
+          "columns": {
+            "align": "stretch",
+            "items": [
+              {
+                "rows": {
+                  "align": "start",
+                  "items": [
+                    {
+                      "align": "start",
+                      "enabled": true,
+                      "enabledWhen": {},
+                      "justify": "start",
+                      "style": {},
+                      "visible": true,
+                      "visibleWhen": {},
+                      "widgets": [
+                        {
+                          "text": {
+                            "autoComplete": "",
+                            "placeholder": "",
+                            "style": {},
+                            "validation": {
+                              "constraints": {
+                                "maxLength": { "enabled": false, "value": null },
+                                "minLength": { "enabled": false, "value": null },
+                                "pattern": { "enabled": false, "value": "" },
+                                "required": { "enabled": true }
+                              },
+                              "icon": { "color": "", "path": "" },
+                              "message": {},
+                              "style": {}
+                            }
+                          },
+                          "enabled": true,
+                          "id": "firstNameField",
+                          "label": {
+                            "style": {},
+                            "text": "First name"
+                          },
+                          "layout": "column",
+                          "readOnly": false,
+                          "style": {},
+                          "tabIndex": 0,
+                          "type": "text",
+                          "visible": true
+                        }
+                      ]
+                    },
+                    {
+                      "align": "start",
+                      "enabled": true,
+                      "enabledWhen": {},
+                      "justify": "start",
+                      "style": {},
+                      "visible": true,
+                      "visibleWhen": {},
+                      "widgets": [
+                        {
+                          "text": {
+                            "autoComplete": "",
+                            "placeholder": "",
+                            "style": {},
+                            "validation": {
+                              "constraints": {
+                                "maxLength": { "enabled": false, "value": null },
+                                "minLength": { "enabled": false, "value": null },
+                                "pattern": { "enabled": false, "value": "" },
+                                "required": { "enabled": true }
+                              },
+                              "icon": { "color": "", "path": "" },
+                              "message": {},
+                              "style": {}
+                            }
+                          },
+                          "enabled": true,
+                          "id": "lastNameField",
+                          "label": {
+                            "style": {},
+                            "text": "Last name"
+                          },
+                          "layout": "column",
+                          "readOnly": false,
+                          "style": {},
+                          "tabIndex": 0,
+                          "type": "text",
+                          "visible": true
+                        }
+                      ]
+                    },
+                    {
+                      "align": "start",
+                      "enabled": true,
+                      "enabledWhen": {},
+                      "justify": "start",
+                      "style": {},
+                      "visible": true,
+                      "visibleWhen": {},
+                      "widgets": [
+                        {
+                          "email": {
+                            "autoComplete": "",
+                            "multiple": false,
+                            "placeholder": "",
+                            "style": {},
+                            "validation": {
+                              "constraints": {
+                                "maxLength": { "enabled": false, "value": null },
+                                "minLength": { "enabled": false, "value": null },
+                                "pattern": { "enabled": false, "value": "" },
+                                "required": { "enabled": true }
+                              },
+                              "icon": { "color": "", "path": "" },
+                              "message": {},
+                              "style": {}
+                            }
+                          },
+                          "enabled": true,
+                          "id": "emailField",
+                          "label": {
+                            "style": {},
+                            "text": "Email address"
+                          },
+                          "layout": "column",
+                          "readOnly": false,
+                          "style": {},
+                          "tabIndex": 0,
+                          "type": "email",
+                          "visible": true
+                        }
+                      ]
+                    },
+                    {
+                      "align": "start",
+                      "enabled": true,
+                      "enabledWhen": {},
+                      "justify": "start",
+                      "style": {},
+                      "visible": true,
+                      "visibleWhen": {},
+                      "widgets": [
+                        {
+                          "password": {
+                            "autoComplete": "",
+                            "placeholder": "Must be at least 8 characters",
+                            "style": {},
+                            "validation": {
+                              "constraints": {
+                                "maxLength": { "enabled": false, "value": null },
+                                "minLength": { "enabled": true, "value": 8 },
+                                "pattern": { "enabled": false, "value": "" },
+                                "required": { "enabled": true }
+                              },
+                              "icon": { "color": "", "path": "" },
+                              "message": {},
+                              "style": {}
+                            }
+                          },
+                          "enabled": true,
+                          "id": "passwordField",
+                          "label": {
+                            "style": {},
+                            "text": "Password"
+                          },
+                          "layout": "column",
+                          "readOnly": false,
+                          "style": {},
+                          "tabIndex": 0,
+                          "type": "password",
+                          "visible": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "justify": "start",
+                "style": {}
+              }
+            ]
+          },
+          "style": {},
+          "visible": true
+        },
+        "type": "ia.input.form"
+      }
+    ]
+  }
+}

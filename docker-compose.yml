@@ -1,0 +1,113 @@
+services:
+  ignition:
+    image: "inductiveautomation/ignition:8.3.0-rc1"
+    restart: unless-stopped
+    ports:
+      - 8090:8088
+    volumes:
+      - ./ignition/data:/usr/local/bin/ignition/data
+      # - ign_data:/var/lib/ignition/data
+      - ./ignition/audio:/home/audio
+      - ./ignition/backups:/home/backups
+    environment:
+      ACCEPT_IGNITION_EULA: 'Y'
+      GATEWAY_ADMIN_USERNAME: admin
+      GATEWAY_ADMIN_PASSWORD: password
+      IGNITION_EDITION: standard
+      TZ: America/Denver
+      IGNITION_LICENSE_KEY: ${IGNITION_LICENSE_KEY:-}
+      IGNITION_ACTIVATION_TOKEN: ${IGNITION_ACTIVATION_TOKEN:-}
+    command:
+      -n Iggy
+    networks:
+      - net
+
+# http://10.10.85.9:5678/home/workflows
+  n8n:
+    image: n8nio/n8n
+    ports:
+      - 5678:5678
+    container_name: n8n
+    restart: unless-stopped
+    environment:
+      N8N_BASIC_AUTH_ACTIVE: 'true'
+      N8N_BASIC_AUTH_PASSWORD: password
+      N8N_BASIC_AUTH_USER: admin
+      N8N_HOST: n8n
+      N8N_PORT: '5678'
+      WEBHOOK_URL: 'http://n8n:5678/'
+      GENERIC_TIMEZONE: 'America/Denver'
+      N8N_SECURE_COOKIE: 'false'
+      NODE_FUNCTION_ALLOW_EXTERNAL: markdown
+      N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE: 'true'
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+    networks:
+      - net
+
+  flaresolverr:
+    container_name: "flaresolverr"
+    hostname: "flaresolverr"
+    image: "ghcr.io/flaresolverr/flaresolverr:latest"
+    logging:
+      driver: "json-file"
+      options: {}
+    ports:
+      - "8191:8191/tcp"
+    networks:
+      - net
+    restart: "unless-stopped"
+    environment:
+      - LOG_LEVEL=info
+
+  # Postgres Database
+  postgres:
+    image: postgres:15.4
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: admin
+      POSTGRES_DB: postgres
+      TZ: America/Denver
+    ports:
+     - 5433:5432
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    networks:
+      - net
+
+# http://10.10.85.9:5050/browser/
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: password
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+    ports:
+      - "5050:80"
+    networks:
+      - net
+    restart: unless-stopped
+
+  
+  openedai-speech:
+    image: ghcr.io/matatonic/openedai-speech-min:latest
+    container_name: openedai_speech_service
+    ports:
+      - "8000:8000"
+    restart: "unless-stopped"
+    networks:
+      - net
+
+networks:
+  net:
+    driver: bridge
+
+volumes:
+  pgadmin:
+  ign_data:
+
+

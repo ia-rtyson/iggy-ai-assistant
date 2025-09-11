@@ -1,0 +1,67 @@
+{
+  "resource-type": "python-resource",
+  "doGet": {
+    "enabled": true,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  },
+  "doPost": {
+    "enabled": false,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  },
+  "doPut": {
+    "enabled": false,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  },
+  "doDelete": {
+    "enabled": false,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  },
+  "doHead": {
+    "enabled": false,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  },
+  "doOptions": {
+    "enabled": false,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  },
+  "doTrace": {
+    "enabled": false,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  },
+  "doPatch": {
+    "enabled": false,
+    "max-retry-attempts": 3,
+    "require-auth": false,
+    "require-https": false,
+    "required-roles": "",
+    "user-source": ""
+  }
+}

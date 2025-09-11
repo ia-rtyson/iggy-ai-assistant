@@ -1,0 +1,20 @@
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "table_sql_view.png"
+  ],
+  "attributes": {
+    "width": 24,
+    "format": "PNG",
+    "lastModification": {
+      "actor": "import",
+      "timestamp": "2025-08-08T18:30:48Z"
+    },
+    "size": 934,
+    "lastModificationSignature": "4436fdf3c83a8efcdce0bfbc20537cf2124db223166466cdb831ce544e5b2c19",
+    "height": 24
+  }
+}

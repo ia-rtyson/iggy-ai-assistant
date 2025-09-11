@@ -1,0 +1,16 @@
+{
+  "ackConf": "Alarm has been acknowledged.",
+  "activeMessage": "At {eventTime|hh:mm:ss}, alarm named {name} became {eventState} with a value of {eventValue}",
+  "challenge": "Please enter your pin, followed by the pound sign.",
+  "clearMessage": "At {eventTime|hh:mm:ss}, alarm named {name} became {eventState} with a value of {eventValue}",
+  "closing": "Thank you, goodbye.",
+  "greeting": "Hello, this is an Ignition alarm notification.",
+  "ignoreConf": "Alarm has been ignored.",
+  "invalidPin": "Invalid pin number.",
+  "locale": "en",
+  "nonChallenge": "Please press any key to continue.",
+  "option1": "Press 1 to acknowledge",
+  "option2": "Press 2 to ignore",
+  "option3": "Press 3 to repeat",
+  "summary": "There are %d events."
+}

@@ -1,0 +1,16 @@
+{
+  "ackConf": "La alarma ha sido confirmada.",
+  "activeMessage": "A la hora {eventTime|hh:mm:ss} la alarma llamada {name} se convirtió {eventState} con un valor de {eventValue}.",
+  "challenge": "Por favor, introduzca su número de PIN seguido de la tecla numeral.",
+  "clearMessage": "A la hora {eventTime|hh:mm:ss} la alarma llamada {name} se convirtió {eventState} con un valor de {eventValue}.",
+  "closing": "Gracias, adiós.",
+  "greeting": "Hola esta es una notificación de alarma.",
+  "ignoreConf": "La alarma ha sido ignorada.",
+  "invalidPin": "Ese número PIN es incorrecto.",
+  "locale": "es",
+  "nonChallenge": "Presione cualquier número para continuar.",
+  "option1": "Presione 1 para confirmar la alarma.",
+  "option2": "Presione 2 para ignorar la alarma.",
+  "option3": "Presione 3 para repetir el mensaje.",
+  "summary": "Hay %d alarmas."
+}

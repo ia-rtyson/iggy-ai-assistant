@@ -1,0 +1,138 @@
+{
+  "custom": {
+    "jsonFailed": false,
+    "widgets": []
+  },
+  "params": {
+    "content": "",
+    "isPopup": false
+  },
+  "propConfig": {
+    "custom.widgets": {
+      "binding": {
+        "config": {
+          "path": "view.params.content"
+        },
+        "transforms": [
+          {
+            "code": "\ttry:\n\t\twidgets \u003d system.util.jsonDecode(value)\n\t\tself.view.custom.jsonFailed \u003d False\n\t\tif widgets:\n\t\t\treturn widgets\n\texcept:\n\t\tself.view.custom.jsonFailed \u003d True\n\t\n\treturn []",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "params.content": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.isPopup": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tsystem.perspective.openPopup(\n\t\tid\u003d\"ArtifactPopup\",\n\t\tview\u003d\"Exchange/Iggy/Pages/Artifacts/Dashboard/Viewer\",\n\t\tparams\u003d{\n\t\t\t\"content\": self.view.params.content,\n\t\t\t\"isPopup\": True\n\t\t},\n#\t\ttitle,\n\t\tposition\u003d{\"width\": \"70%\", \"height\": \"80%\"},\n\t\tshowCloseIcon\u003dTrue,\n\t\tdraggable\u003dTrue,\n\t\tresizable\u003dTrue,\n\t\tmodal\u003dFalse,\n\t\toverlayDismiss\u003dTrue,\n#\t\tsessionId,\n#\t\tpageId,\n#\t\tviewportBound\n\t)"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Icon"
+            },
+            "position": {
+              "basis": "24px",
+              "shrink": 0
+            },
+            "props": {
+              "path": "material/open_in_full",
+              "style": {
+                "cursor": "pointer",
+                "opacity": 0.2,
+                "right": "0px",
+                "top": "0px"
+              }
+            },
+            "type": "ia.display.icon"
+          }
+        ],
+        "meta": {
+          "name": "IconWrapper"
+        },
+        "position": {
+          "basis": "24px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "position.display": {
+            "binding": {
+              "config": {
+                "expression": "!{view.params.isPopup}"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "justify": "flex-end",
+          "style": {
+            "marginBottom": "-24px",
+            "zIndex": 2
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "Dashboard"
+        },
+        "position": {
+          "basis": "640px",
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.widgets": {
+            "binding": {
+              "config": {
+                "path": "view.custom.widgets"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "editingToggle": false,
+          "pack": false,
+          "stretch": {
+            "columnCount": 14,
+            "columnGutterSize": 2,
+            "rowCount": 10,
+            "rowGutterSize": 2
+          }
+        },
+        "type": "ia.display.dashboard"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {}
+    },
+    "type": "ia.container.flex"
+  }
+}

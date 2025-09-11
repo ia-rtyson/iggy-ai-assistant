@@ -1,0 +1,7 @@
+{
+  "title": "Local",
+  "description": "Gateway configuration resources that are unique to the local instance, and will not be synchronized with a redundant pair, if any.",
+  "enabled": true,
+  "inheritable": false,
+  "parent": "core"
+}

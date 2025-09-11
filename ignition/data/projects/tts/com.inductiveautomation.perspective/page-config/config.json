@@ -1,0 +1,11 @@
+{
+  "pages": {
+    "/": {
+      "title": "tts",
+      "viewPath": "test"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "top-bottom"
+  }
+}

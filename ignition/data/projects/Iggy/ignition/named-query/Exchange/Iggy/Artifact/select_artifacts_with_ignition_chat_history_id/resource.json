@@ -1,0 +1,40 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "postgres",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "67be3207b9888f6979f63ad79bad7f4bcb07ee14744b1fa95f25801872c770e8",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "rtyson",
+      "timestamp": "2025-08-12T15:33:24Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "ignition_chat_history_id",
+        "sqlType": 2
+      }
+    ]
+  }
+}

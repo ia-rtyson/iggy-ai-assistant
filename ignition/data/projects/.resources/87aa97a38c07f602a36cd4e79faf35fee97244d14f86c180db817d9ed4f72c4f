@@ -1,0 +1,114 @@
+
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 800,
+      "height": 600
+    }
+  },
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord",
+    "children": [
+      {
+        "meta": {
+          "name": "LeftEye"
+        },
+        "position": {
+          "x": 150,
+          "y": 100,
+          "width": 100,
+          "height": 100
+        },
+        "type": "ia.chart.simple-gauge"
+      },
+      {
+        "meta": {
+          "name": "RightEye"
+        },
+        "position": {
+          "x": 550,
+          "y": 100,
+          "width": 100,
+          "height": 100
+        },
+        "type": "ia.chart.simple-gauge"
+      },
+      {
+        "meta": {
+          "name": "Nose"
+        },
+        "position": {
+          "x": 375,
+          "y": 250,
+          "width": 50,
+          "height": 150
+        },
+        "props": {
+          "intervals": [
+            {
+              "color": "#47A9E5",
+              "high": 25,
+              "low": 0
+            },
+            {
+              "color": "#B394EF",
+              "high": 75,
+              "low": 25
+            },
+            {
+              "color": "#DB3939",
+              "high": 100,
+              "low": 75
+            }
+          ]
+        },
+        "type": "ia.display.thermometer"
+      },
+      {
+        "meta": {
+          "name": "Mouth"
+        },
+        "position": {
+          "x": 300,
+          "y": 450,
+          "width": 200,
+          "height": 50
+        },
+        "props": {
+          "indicators": [
+            {
+              "color": "",
+              "extent": 15,
+              "indicatorStyle": "range",
+              "label": "High",
+              "labelAngle": 270,
+              "labelColor": "",
+              "length": 25,
+              "opacity": 0.4,
+              "stroke": 1.5,
+              "value": 85
+            },
+            {
+              "color": "",
+              "extent": 2,
+              "indicatorStyle": "wedge",
+              "label": "Low",
+              "labelAngle": 270,
+              "labelColor": "",
+              "length": 25,
+              "opacity": 1,
+              "stroke": 2,
+              "value": 20
+            }
+          ]
+        },
+        "type": "ia.display.linear-scale"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "onKeyEvent.py"
+  ],
+  "attributes": {
+    "eventMode": "KEYDOWN",
+    "regexPattern": "",
+    "preventDefaultEventOption": false,
+    "enabled": true,
+    "eventBoundCode": "",
+    "capturePhaseEventOption": false,
+    "metaEventModifier": false,
+    "eventBound": "KEY",
+    "stopPropagationEventOption": false,
+    "lastModificationSignature": "6ee98bb8208437ef54b8c66cabd5fe4386b04bc59a57aff90fb524d8a9006251",
+    "altEventModifier": false,
+    "lastModification": {
+      "actor": "rtyson",
+      "timestamp": "2025-08-26T17:58:18Z"
+    },
+    "regexWindow": 1,
+    "controlEventModifier": true,
+    "shiftEventModifier": false,
+    "eventBoundKey": "Enter"
+  }
+}

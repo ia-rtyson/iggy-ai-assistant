@@ -1,0 +1,24 @@
+{
+  "profile": {
+    "allowBackfill": false,
+    "enableTagReferenceStore": true,
+    "type": "STANDARD"
+  },
+  "settings": {
+    "defaultDatasourceName": null,
+    "editPermissions": {
+      "securityLevels": [],
+      "type": "AllOf"
+    },
+    "readOnly": false,
+    "readPermissions": {
+      "securityLevels": [],
+      "type": "AllOf"
+    },
+    "valuePersistence": "Database",
+    "writePermissions": {
+      "securityLevels": [],
+      "type": "AllOf"
+    }
+  }
+}

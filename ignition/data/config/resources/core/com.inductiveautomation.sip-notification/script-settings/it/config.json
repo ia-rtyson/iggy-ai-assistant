@@ -1,0 +1,16 @@
+{
+  "ackConf": "L\u0027allarme è stato riconosciuto.",
+  "activeMessage": "All\u0027ora {eventTime|hh:mm:ss}, l\u0027allarme {name} è diventato {eventState} con un valore di {eventValue}.",
+  "challenge": "Inserire il codice PIN e premere cancelletto.",
+  "clearMessage": "All\u0027ora {eventTime|hh:mm:ss}, l\u0027allarme {name} è diventato {eventState} con un valore di {eventValue}.",
+  "closing": "Grazie, arrivederci.",
+  "greeting": "Benvenuto nel sistema di notifica allarmi di Ignition.",
+  "ignoreConf": "L\u0027allarme è stato ignorato.",
+  "invalidPin": "Codice PIN errato.",
+  "locale": "it",
+  "nonChallenge": "Premere un tasto per continuare.",
+  "option1": "Premere 1 per riconoscere l’allarme.",
+  "option2": "Premere 2 per ignorare l’allarme.",
+  "option3": "Premere 3 per ripetere l’allarme.",
+  "summary": "Ci sono %d allarmi."
+}

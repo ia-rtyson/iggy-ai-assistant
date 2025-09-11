@@ -1,0 +1,10 @@
+{
+  "classname": "org.sqlite.JDBC",
+  "defaultPropInstructions": "No extra connection parameters are recommended for SQLite",
+  "defaultProps": "",
+  "defaultTranslator": "SQLITE",
+  "defaultValidationQuery": "SELECT 1",
+  "type": "SQLITE",
+  "urlFormat": "jdbc:sqlite:C:/Path/To/File.db",
+  "urlInstructions": "\u003cbr/\u003eThe format of the SQLite connect URL is:\u003cbr/\u003e\u003ccode\u003ejdbc:sqlite:C:/Path/To/File.db\u003c/code\u003e\u003cbr/\u003e\u003ccode\u003ejdbc:sqlite:/path/on/linux/File.db\u003c/code\u003e\u003cbr/\u003e\u003cbr/\u003eUse \u003ccode\u003e${data}\u003c/code\u003e or \u003ccode\u003e${local}\u003c/code\u003e as a placeholder for the Ignition Gateway\u0027s data directory or local directory, respectively, as seen below:\u003cbr/\u003e\u003ccode\u003ejdbc:sqlite:${data}/File.db\u003c/code\u003e\u003cbr/\u003e\u003ccode\u003ejdbc:sqlite:${local}/Folder/File.db\u003c/code\u003e\u003cbr/\u003e\u003cbr/\u003eUse \u003ccode\u003ejdbc:sqlite::memory:\u003c/code\u003e for a temporary database.\u003cbr/\u003e"
+}

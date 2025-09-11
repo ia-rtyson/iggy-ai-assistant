@@ -1,0 +1,10 @@
+{
+  "classname": "com.mysql.cj.jdbc.Driver",
+  "defaultPropInstructions": "There is an extensive list of extra connection properties available for MySQL Connector/J. See \u003ca href\u003d\u0027http://dev.mysql.com/doc/connectors/en/connector-j-reference-configuration-properties.html\u0027\u003ethe documentation\u003c/a\u003e for a table describing all connection properties.\u003cbr\u003eA default \u003ctt\u003eserverTimezone\u003c/tt\u003e value (taken from the gateway) will be appended to the connection string if one is not specified.",
+  "defaultProps": "zeroDateTimeBehavior\u003dCONVERT_TO_NULL;connectTimeout\u003d120000;socketTimeout\u003d120000;useSSL\u003dfalse;allowPublicKeyRetrieval\u003dtrue;rewriteBatchedStatements\u003dtrue;disableMariaDbDriver",
+  "defaultTranslator": "MYSQL",
+  "defaultValidationQuery": "SELECT 1",
+  "type": "MYSQL",
+  "urlFormat": "jdbc:mysql://localhost:3306/test",
+  "urlInstructions": "\u003cbr/\u003eThe format of the MySQL connect URL is:\u003cbr\u003e\u003ccode\u003ejdbc:mysql://\u003cb\u003ehost\u003c/b\u003e:\u003cb\u003eport\u003c/b\u003e/\u003cb\u003edatabase\u003c/b\u003e\u003c/code\u003e\u003cbr\u003eWith the three parameters (in bold) \u003cul style\u003d\"list-style-type:none;margin-left:10px;\"\u003e\u003cli\u003e\u003cb\u003ehost\u003c/b\u003e: The host name or IP address of the database server.\u003c/li\u003e\u003cli\u003e\u003cb\u003eport\u003c/b\u003e: The port that the database server is running on. MySQL default port is \u003cb\u003e3306\u003c/b\u003e.\u003c/li\u003e\u003cli\u003e\u003cb\u003edatabase\u003c/b\u003e: The name of the logical database that you are connecting to on the MySQL server.\u003c/li\u003e\u003c/ul\u003e"
+}

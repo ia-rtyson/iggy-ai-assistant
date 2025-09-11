@@ -1,0 +1,12 @@
+{
+  "base": {
+    "style": {
+      "color": "var(--neutral-100)",
+      "fontSize": "18px",
+      "fontWeight": "normal",
+      "lineHeight": "30px",
+      "textAlign": "center",
+      "textIndent": "4px"
+    }
+  }
+}

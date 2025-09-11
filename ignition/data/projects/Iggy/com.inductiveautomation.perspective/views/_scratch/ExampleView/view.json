@@ -1,0 +1,420 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Progress"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 22
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_0"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 52
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_1"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 113
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_2"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 83
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank"
+        },
+        "position": {
+          "height": 160,
+          "width": 136,
+          "x": 251,
+          "y": 32
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "Progress_3"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 174
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_4"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 144
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank_0"
+        },
+        "position": {
+          "height": 160,
+          "width": 136,
+          "x": 251,
+          "y": 255
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "Progress_5"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 397
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_6"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 367
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_7"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 336
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_8"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 306
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_9"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 275
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_10"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 31,
+          "y": 245
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank_1"
+        },
+        "position": {
+          "height": 160,
+          "width": 136,
+          "x": 638,
+          "y": 255
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "Progress_11"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 397
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_12"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 367
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_13"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 336
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_14"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 306
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_15"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 275
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_16"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 245
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "CylindricalTank_2"
+        },
+        "position": {
+          "height": 160,
+          "width": 136,
+          "x": 638,
+          "y": 32
+        },
+        "type": "ia.display.cylindrical-tank"
+      },
+      {
+        "meta": {
+          "name": "Progress_17"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 174
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_18"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 144
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_19"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 113
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_20"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 83
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_21"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 52
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "Progress_22"
+        },
+        "position": {
+          "height": 20,
+          "width": 200,
+          "x": 418,
+          "y": 22
+        },
+        "type": "ia.display.progress"
+      },
+      {
+        "meta": {
+          "name": "TimeSeriesChart"
+        },
+        "position": {
+          "height": 336,
+          "width": 744,
+          "x": 31,
+          "y": 437
+        },
+        "props": {
+          "series": [
+            {
+              "data": [
+                {
+                  "Pressure": 12,
+                  "Temperature": 52,
+                  "time": 1560469431423
+                },
+                {
+                  "Pressure": 42,
+                  "Temperature": 18,
+                  "time": 1560469432423
+                },
+                {
+                  "Pressure": 81,
+                  "Temperature": 26,
+                  "time": 1560469433423
+                },
+                {
+                  "Pressure": 11,
+                  "Temperature": 63,
+                  "time": 1560469434423
+                },
+                {
+                  "Pressure": 23,
+                  "Temperature": 65,
+                  "time": 1560469435423
+                },
+                {
+                  "Pressure": 43,
+                  "Temperature": 12,
+                  "time": 1560469436423
+                },
+                {
+                  "Pressure": 71,
+                  "Temperature": 61,
+                  "time": 1560469437423
+                },
+                {
+                  "Pressure": 89,
+                  "Temperature": 60,
+                  "time": 1560469438423
+                },
+                {
+                  "Pressure": 66,
+                  "Temperature": 58,
+                  "time": 1560469439423
+                },
+                {
+                  "Pressure": 33,
+                  "Temperature": 1,
+                  "time": 1560469440423
+                }
+              ],
+              "name": "Boiler"
+            }
+          ]
+        },
+        "type": "ia.chart.timeseries"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

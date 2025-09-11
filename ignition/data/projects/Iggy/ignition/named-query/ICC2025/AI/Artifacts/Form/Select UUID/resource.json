@@ -1,0 +1,40 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "Form Configs",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "b602d8543c46aac7ccb94de826a2295d14d43f847e855e3519dd53cc0ca2d438",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "mraybourn",
+      "timestamp": "2025-08-12T20:32:00Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "uuid",
+        "sqlType": 7
+      }
+    ]
+  }
+}

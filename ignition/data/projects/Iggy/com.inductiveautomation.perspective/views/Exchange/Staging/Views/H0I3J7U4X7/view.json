@@ -1,0 +1,120 @@
+{
+  "root": {
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column"
+    },
+    "children": [
+      {
+        "type": "ia.input.toggle-switch",
+        "position": {},
+        "props": {
+          "label": {
+            "text": "Alarm Toggle"
+          }
+        },
+        "propConfig": {
+          "props.selected": {
+            "binding": {
+              "type": "tag",
+              "config": {
+                "mode": "direct",
+                "tagPath": "[default]Alarm Toggle",
+                "bidirectional": true
+              }
+            }
+          }
+        }
+      },
+      {
+        "meta": {
+          "name": "Gauge"
+        },
+        "position": {
+          "basis": "175px"
+        },
+        "type": "ia.chart.gauge",
+        "props": {
+          "value": 0,
+          "outerAxis": {
+            "ranges": [
+              {
+                "color": "#77B6D8",
+                "end": 80,
+                "start": 0,
+                "width": 8
+              },
+              {
+                "color": "#6E94D7",
+                "end": 105,
+                "start": 80,
+                "width": 12
+              },
+              {
+                "color": "#7A6BD5",
+                "end": 120,
+                "start": 105,
+                "width": 16
+              }
+            ]
+          }
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "type": "tag",
+              "config": {
+                "mode": "direct",
+                "tagPath": "[default]Motor RPM"
+              }
+            }
+          },
+          "props.outerAxis.maxValue": {
+            "binding": {
+              "type": "tag",
+              "config": {
+                "mode": "direct",
+                "tagPath": "[default]Motor Setpoint"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "ia.input.slider",
+        "position": {},
+        "props": {
+          "max": 5000
+        },
+        "propConfig": {
+          "props.value": {
+            "binding": {
+              "type": "tag",
+              "config": {
+                "mode": "direct",
+                "tagPath": "[default]Motor Setpoint",
+                "bidirectional": true
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "ia.input.text-field",
+        "position": {},
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "type": "tag",
+              "config": {
+                "mode": "direct",
+                "tagPath": "[default]Writeable Tag",
+                "bidirectional": true
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

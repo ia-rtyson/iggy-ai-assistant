@@ -1,0 +1,164 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Dashboard"
+        },
+        "position": {
+          "basis": "400px",
+          "grow": 1
+        },
+        "props": {
+          "availableWidgets": [
+            {
+              "body": {
+                "style": {
+                  "classes": ""
+                }
+              },
+              "category": "System Diagnostics",
+              "defaultSize": {
+                "columnSpan": 2,
+                "rowSpan": 2
+              },
+              "header": {
+                "enabled": false,
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "isConfigurable": true,
+              "minSize": {
+                "columnSpan": 1,
+                "rowSpan": 2
+              },
+              "name": "Disk Space Info",
+              "style": {
+                "classes": ""
+              },
+              "viewParams": {
+                "availableSpace": "[System]Gateway/Performance/Available Disk Space (MB)",
+                "utilization": "[System]Gateway/Performance/Disk Utilization"
+              },
+              "viewPath": "Exchange/Staging/Widgets/Test"
+            }
+          ],
+          "pack": false,
+          "stretch": {
+            "columnCount": 16,
+            "rowCount": 6
+          },
+          "widgets": [
+            {
+              "body": {
+                "style": {
+                  "classes": ""
+                }
+              },
+              "header": {
+                "enabled": false,
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "isConfigurable": false,
+              "minSize": {
+                "columnSpan": 1,
+                "rowSpan": 2
+              },
+              "name": "Disk Space Info",
+              "position": {
+                "columnEnd": 3,
+                "columnStart": 1,
+                "rowEnd": 3,
+                "rowStart": 1
+              },
+              "style": {
+                "classes": ""
+              },
+              "viewParams": {
+                "availableSpace": "[System]Gateway/Performance/Available Disk Space (MB)",
+                "utilization": "[System]Gateway/Performance/Disk Utilization"
+              },
+              "viewPath": "Exchange/Staging/Widgets/Test"
+            },
+            {
+              "body": {
+                "style": {
+                  "classes": ""
+                }
+              },
+              "header": {
+                "enabled": false,
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "isConfigurable": true,
+              "minSize": {
+                "columnSpan": 1,
+                "rowSpan": 2
+              },
+              "name": "Disk Space Info",
+              "position": {
+                "columnEnd": 7,
+                "columnStart": 5,
+                "rowEnd": 3,
+                "rowStart": 1
+              },
+              "style": {
+                "classes": ""
+              },
+              "viewParams": {
+                "availableSpace": "[System]Gateway/Performance/Available Disk Space (MB)",
+                "utilization": "[System]Gateway/Performance/Disk Utilization"
+              },
+              "viewPath": "Exchange/Staging/Widgets/Test"
+            }
+          ]
+        },
+        "type": "ia.display.dashboard"
+      },
+      {
+        "meta": {
+          "name": "Markdown"
+        },
+        "position": {
+          "basis": "600px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.source": {
+            "binding": {
+              "config": {
+                "path": "../Dashboard.props.widgets"
+              },
+              "transforms": [
+                {
+                  "code": "\treturn \"\"\"```json\n%s\n```\"\"\" %system.util.jsonEncode(system.util.jsonDecode(value.toString()), 2)",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.display.markdown"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

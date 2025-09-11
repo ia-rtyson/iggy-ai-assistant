@@ -1,0 +1,55 @@
+{
+  "custom": {
+    "text": "lets go ICC!!"
+  },
+  "params": {},
+  "propConfig": {
+    "custom.text": {
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "events": {
+          "dom": {
+            "onClick": {
+              "config": {
+                "script": "\tsavePath \u003d \"/home/audio\"\n\t\n\ttext_to_speak \u003d self.view.custom.text\n\tselected_voice \u003d \u0027shimmer\u0027\n\t\n\tnow \u003d system.date.now()\n\tformattedDate \u003d system.date.format(now, \"yyyy_MM_dd_HH_mm_ss\")\n\tfileName \u003d \"speech_%s.mp3\" % formattedDate\n\t\n\t# 4. Check if the user has entered any text\n\tif text_to_speak:\n\t    # Call the gateway function to save the file\n\t    result \u003d tts.generateAndSaveSpeech(\n\t        inputText\u003dtext_to_speak,\n\t        saveFolderPath\u003dsavePath,\n\t        fileName\u003dfileName,\n\t        voice\u003dselected_voice\n\t    )\n\t    system.util.getLogger(\u0027button-tts\u0027).info(str(result))\n\t    # 5. If the save was successful, update the Audio component and play\n\t    if result[\u0027success\u0027]:\n\t        gatewayAddress \u003d \"http://localhost:8088\"\n\t        projectName \u003d system.project.getProjectName()\n\t        \n\t        # Build the public URL to the audio file (same as before)\n\t        audioUrl \u003d \"%s/system/webdev/%s/audio/%s\" % (gatewayAddress, projectName, fileName)\n\t        system.util.getLogger(\u0027button-tts\u0027).info(audioUrl)\n\t        # --- THIS IS THE UPDATED PART ---\n\t        # Get a reference to your Audio component\n\t        self.getSibling(\"Audio\").props.source \u003d audioUrl\n\t        self.getSibling(\"Audio\").props.play \u003d True"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Button"
+        },
+        "position": {
+          "basis": "34px"
+        },
+        "type": "ia.input.button"
+      },
+      {
+        "meta": {
+          "name": "Audio"
+        },
+        "position": {
+          "basis": "55px"
+        },
+        "props": {
+          "source": "http://localhost:8088/system/webdev/tts/audio/speech_2025_08_31_22_45_45.mp3"
+        },
+        "type": "ia.display.audio"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

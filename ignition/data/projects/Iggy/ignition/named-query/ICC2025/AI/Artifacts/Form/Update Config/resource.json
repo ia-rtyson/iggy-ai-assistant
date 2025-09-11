@@ -1,0 +1,45 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "Form Configs",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "2210c9b9d66104f6bef6ace36fbb82d3b792fcc2ebf092a13b0fb88f7346aac7",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "mraybourn",
+      "timestamp": "2025-08-12T20:32:00Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "config_json",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "uuid",
+        "sqlType": 7
+      }
+    ]
+  }
+}

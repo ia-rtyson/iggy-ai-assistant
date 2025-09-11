@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "name": "SimpleTagView"
+  },
+  "props": {},
+  "custom": {},
+  "events": {},
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.display.coord",
+    "props": {
+      "mode": "fixed"
+    },
+    "custom": {},
+    "position": {},
+    "components": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "type": "ia.display.label",
+        "props": {
+          "text": "Motor RPM",
+          "style": {
+            "fontSize": "18px",
+            "fontWeight": "bold"
+          }
+        },
+        "position": {
+          "x": 50,
+          "y": 50,
+          "width": 200,
+          "height": 30
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "type": "tag",
+              "config": {
+                "bidirectional": false,
+                "mode": "direct",
+                "tagPath": "[default]Motor RPM"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

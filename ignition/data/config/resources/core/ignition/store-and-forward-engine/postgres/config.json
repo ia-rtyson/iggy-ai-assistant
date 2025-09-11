@@ -1,0 +1,23 @@
+{
+  "batchSize": 10000,
+  "dataThreshold": 10000,
+  "forwardRateMs": 1000,
+  "forwardingPolicy": "ALL",
+  "isThirdParty": false,
+  "primaryMaintenancePolicy": {
+    "action": "PREVENT_NEW_DATA",
+    "limit": {
+      "limitType": "COUNT",
+      "value": 0
+    }
+  },
+  "scanRateMs": 100,
+  "secondaryMaintenancePolicy": {
+    "action": "PREVENT_NEW_DATA",
+    "limit": {
+      "limitType": "COUNT",
+      "value": 0
+    }
+  },
+  "timeThresholdMs": 30000
+}

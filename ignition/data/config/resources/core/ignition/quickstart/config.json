@@ -1,0 +1,25 @@
+{
+  "finished": true,
+  "steps": [
+    {
+      "completed": true,
+      "name": "INSTALL"
+    },
+    {
+      "completed": true,
+      "name": "ENABLED"
+    },
+    {
+      "completed": true,
+      "name": "DESIGNER"
+    },
+    {
+      "completed": true,
+      "name": "PROJECT"
+    },
+    {
+      "completed": true,
+      "name": "SESSION"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "A",
+  "description": "",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "rtyson.png"
+  ],
+  "attributes": {
+    "width": 512,
+    "format": "PNG",
+    "lastModification": {
+      "actor": "rtyson",
+      "timestamp": "2025-08-08T21:07:02Z"
+    },
+    "size": 389019,
+    "lastModificationSignature": "198302bde733472dd3078dadba0605e8d27ea950ca728db288b91be1e2831517",
+    "height": 512
+  }
+}

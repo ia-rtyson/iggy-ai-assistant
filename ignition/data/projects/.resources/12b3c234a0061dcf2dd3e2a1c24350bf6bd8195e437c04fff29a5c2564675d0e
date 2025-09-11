@@ -1,0 +1,304 @@
+:root {
+/*	--nav-open-width: 300px;*/
+}
+
+
+/* Pages */
+.psc-page{
+	background-color: var(--neutral-20);
+	padding:5px;
+}
+.psc-chatbox{
+/*	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);*/
+	box-shadow: var(--neutral-40) 0px 2px 8px 0px;
+/*	box-shadow: rgba(255, 255, 255) 0px 2px 8px 0px;*/
+	border-radius: 25px;
+/*	background-color: grey;*/
+	margin: 15px;
+}
+
+
+/* Overrides the default scrollbar styles */
+::-webkit-scrollbar {
+      width: 12px; 	  
+   }
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 8px;
+    background-color: var(--neutral-10); 
+  }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--neutral-50); 
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-60); 
+  border-radius: 7px;
+}
+
+
+/*Misc*/
+.psc-icon{
+    padding: 3px;
+    margin: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--neutral-50);
+}
+.psc-icon:hover{
+    background-color: var(--neutral-30);
+    transition: all 0.2s ease;
+}
+
+.psc-iconPulse{
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.90);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.9);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.90);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.psc-spinning-icon{
+	animation: spin 0.75s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    80%  { transform: rotate(400deg); } /* Overshoot past 360 */
+    100% { transform: rotate(360deg); } /* Settle back */
+}
+
+
+
+
+
+:root{
+	/* ---------- ICC Color Variables ---------- */
+	--aqua     : #2286C8;
+	--jade     : #00A368;
+	--topaz    : #E9BF1E;
+	--amber    : #F79120;
+	--sapphire : #12182D;
+	--diamond  : #E6F5FB;
+	/* ---------- New gray shades ---------- */
+	--diamond-dark : #c0dfe6;
+	--gray-light   : #d5e5e9;
+	--gray-mid     : #636363;
+	--gray-dark    : #2d2d2d;
+	--gray-darker  : #1d1d1d;
+	--grid         : color-mix(in srgb, var(--diamond), transparent 99.3%);
+	/* ---------- New highlight colors ---------- */
+	--highlight-green  : #B6E4B6;
+	--highlight-orange : #F6D7A5;
+	--highlight-cyan   : #A8D5E2;
+	--highlight-pink   : #FAD0C4;
+}
+
+
+.psc-grid-background{
+    background:
+        linear-gradient(-90deg, var(--grid) 1px, transparent 1px),
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(-90deg, var(--grid) 1px, transparent 1px),
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(transparent 5px, var(--sapphire) 5px, var(--sapphire) 55px, transparent 55px),
+        linear-gradient(-90deg, var(--grid) 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 5px, var(--sapphire) 5px, var(--sapphire) 55px, transparent 55px),
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        var(--sapphire);
+    background-size:
+        30px 30px,
+        30px 30px,
+        60px 60px,
+        60px 60px,
+        60px 60px,
+        60px 60px,
+        60px 60px,
+        60px 60px;
+    background-position: top 53px left 1px;
+}
+
+.psc-circuit-background{
+	width:280px;
+	background-color:var(--gray-darker);
+	background-image:
+		repeating-linear-gradient(
+		45deg, transparent 0px,
+		transparent 4px,
+		color-mix(in srgb, var(--gray-mid), transparent 97%) 6px,
+		transparent 10px,
+		transparent 20px
+		);
+	background-size: 60px 60px;
+	color:var(--diamond);
+}
+
+.psc-chat-bubble{
+	margin-bottom:12px;
+	min-width:400px;
+	max-width:80%;
+	display:block;
+	padding:10px 12px;
+	border-radius:10px;
+	background:var(--gray-dark);  /* swap background to dark */
+  	color:var(--diamond-dark);        /* text becomes light */
+	position:relative;
+	box-shadow: 0px 0px 0px 0px var(--diamond);
+}
+
+.psc-chat-bubble.psc-user{
+	align-self:flex-end;
+	border-right:15px solid var(--aqua);
+}
+
+.psc-chat-bubble.psc-assistant{
+	align-self:flex-start;
+	border-left:15px solid var(--jade);
+}
+
+.psc-chat-bubble.psc-user{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-end;
+}
+
+.psc-chat-bubble.psc-user .psc-role{
+	text-align:right;
+}
+.psc-chat-bubble.psc-user .psc-text{
+	display:inline-block;
+	margin-left:auto;
+	text-align:left;
+	max-width:100%;
+	white-space:pre-wrap;
+}
+
+.psc-chat-bubble .psc-role{
+	font-size:0.8em;
+	font-weight:700;
+	margin-bottom:4px;
+}
+
+.psc-chat-input-wrapper{
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+	padding:10px 0;
+}
+
+.psc-chat-input{
+	width:100%;
+	display:flex;
+	align-items:center;
+	background:var(--gray-darker);
+	/* background-image:
+	repeating-linear-gradient(
+	 45deg, transparent 0px,
+	 transparent 7px,
+	 color-mix(in srgb, var(--gray-light), transparent 97%) 8px,
+	 transparent 10px
+	);
+	background-size: 60px 60px; */
+	border-radius: 10px;
+	border-top:1px solid var(--grid);
+	padding:10px 10px;
+	border-right:15px solid var(--aqua);
+}
+.psc-chat-input textarea{
+	flex:1;
+	padding:8px 12px;
+	border:none;
+	border-radius:4px;
+	font-size:1em;
+	margin-right:8px;
+	background: var(--gray-dark);
+	color: var(--diamond);
+	box-shadow: 0px 0px 0px 0px var(--gray-light);
+}
+.psc-chat-input button{
+	padding:8px 12px;
+	margin-right:4px;
+	border:none;
+	border-radius:4px;
+	cursor:pointer;
+	font-size:1em;
+	box-shadow: 0px 0px 8px 0px var(--sapphire);
+}
+.psc-chat-input button.psc-send{
+	background:var(--aqua);color:#fff;
+}
+.psc-chat-input button.psc-upload{
+	background:var(--jade);color:#fff;
+}
+.psc-chat-input input[type="file"]{
+	display:none;
+}
+
+
+
+
+
+
+
+[data-component="ia.display.markdown"] table tbody tr{
+	background: var(--neutral-50);
+}
+[data-component="ia.display.markdown"] table tbody tr:nth-child(2n){
+	background: color-mix(in srgb, var(--neutral-50), var(--div-10) 13%);
+}
+[data-component="ia.display.markdown"] table thead tr{
+	background: color-mix(in srgb, var(--neutral-50), var(--div-13) 40%);
+}
+[data-component="ia.display.markdown"] pre{
+	background: var(--neutral-20));
+	padding: 10px;
+	border-radius: 10px;
+	margin: 5px 0px;
+}
+[data-component="ia.display.markdown"] ul, [data-component="ia.display.markdown"] ol {
+	list-style-position: unset;
+}
+[data-component="ia.display.markdown"] blockquote {
+	color: var(--neutral-10);
+	margin: unset;
+	padding-left: 12px;
+	border-left: 4px var(--div-3) double;
+	border-radius: 4px;
+	background: color-mix(in srgb, transparent, var(--neutral-20) 30%);
+}
+[data-component="ia.display.markdown"] hr {
+	color: color-mix(in srgb, var(--neutral-90), transparent 70%);
+	background: color-mix(in srgb, var(--div-9), transparent 70%);
+	padding: 0.5px 0px;
+	margin: 4px 0px;
+}
+/*.psc-chat-bubble [data-component="ia.display.markdown"] .copy {*/
+/*	color: color-mix(in srgb, var(--gray-mid), transparent 20%);*/
+/*	background: color-mix(in srgb, transparent, var(--aqua) 10%);*/
+/*	padding: 0px 5px;*/
+/*	margin-left: 4px;*/
+/*	border: none;*/
+/*	border-radius: 5px;*/
+/*	font-variant: small-caps;*/
+/*}*/

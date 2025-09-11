@@ -1,0 +1,30 @@
+[
+  {
+    "custom": {},
+    "params": {},
+    "props": {},
+    "root": {
+      "meta": {
+        "name": "root"
+      },
+      "props": {
+        "direction": "column"
+      },
+      "type": "ia.container.flex",
+      "children": [
+        {
+          "meta": {
+            "name": "MyLabel"
+          },
+          "position": {
+            "basis": "32px"
+          },
+          "props": {
+            "text": "Hello, Perspective!"
+          },
+          "type": "ia.display.label"
+        }
+      ]
+    }
+  }
+]

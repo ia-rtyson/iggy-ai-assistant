@@ -1,0 +1,17 @@
+{
+  "agentSettings": {
+    "forwardLeasedLicense": false,
+    "httpConnectTimeout": 10,
+    "httpReadTimeout": 60,
+    "sendStatsInterval": 30
+  },
+  "controllerSettings": {
+    "archiveLocationMode": "Automatic",
+    "backupRetentionAge": 0,
+    "backupRetentionTimeUnit": "Days",
+    "eventTableName": "agent_events",
+    "lowDiskThresholdMB": 1024,
+    "maxRetainedBackupCount": 5
+  },
+  "installMode": "NotInstalled"
+}

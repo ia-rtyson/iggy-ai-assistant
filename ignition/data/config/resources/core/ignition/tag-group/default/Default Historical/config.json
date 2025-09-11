@@ -1,0 +1,11 @@
+{
+  "config": {
+    "mode": "Direct",
+    "oneShot": false,
+    "opcDataMode": "Subscribed",
+    "optWriteTimeout": 60000,
+    "optWrites": false,
+    "rate": 10000,
+    "readAfterWrite": false
+  }
+}

@@ -1,0 +1,2 @@
+def doGet(request, session):
+	

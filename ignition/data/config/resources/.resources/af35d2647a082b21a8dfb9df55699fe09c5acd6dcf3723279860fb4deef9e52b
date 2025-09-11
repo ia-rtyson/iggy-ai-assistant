@@ -1,0 +1,62 @@
+{
+  "profile": {
+    "securityLevelRules": {
+      "nodes": []
+    },
+    "type": "internal",
+    "userAttributeMapper": {
+      "email": {
+        "config": {
+          "attributePath": "email"
+        },
+        "type": "direct"
+      },
+      "firstName": {
+        "config": {
+          "attributePath": "given_name"
+        },
+        "type": "direct"
+      },
+      "id": {
+        "config": {
+          "attributePath": "sub"
+        },
+        "type": "direct"
+      },
+      "lastName": {
+        "config": {
+          "attributePath": "family_name"
+        },
+        "type": "direct"
+      },
+      "roles": {
+        "config": {
+          "attributePath": "roles"
+        },
+        "type": "direct"
+      },
+      "userName": {
+        "config": {
+          "attributePath": "preferred_username"
+        },
+        "type": "direct"
+      }
+    },
+    "userGrants": {
+      "id": {},
+      "username": {}
+    }
+  },
+  "settings": {
+    "authMethods": [
+      {
+        "config": {},
+        "type": "basic"
+      }
+    ],
+    "rememberMeExp": 0,
+    "sessionExp": 0,
+    "sessionInactivityTimeout": 30,
+    "userSource": "default"
+  }
+}

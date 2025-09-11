@@ -1,0 +1,16 @@
+{
+  "ackConf": "L\u0027alarme a été acquittée.",
+  "activeMessage": "A {eventTime|hh:mm:ss}, l’alarme {name} est passée {eventState} avec la valeur {eventValue}.",
+  "challenge": "Entrez votre code PIN s’il vous plait.",
+  "clearMessage": "A {eventTime|hh:mm:ss}, l’alarme {name} est passée {eventState} avec la valeur {eventValue}.",
+  "closing": "Merci, au revoir.",
+  "greeting": "Bonjour, ceci est une notification d\u0027alarme.",
+  "ignoreConf": "L\u0027alarme a été ignorée.",
+  "invalidPin": "Invalid pin number.",
+  "locale": "fr",
+  "nonChallenge": "Appuyez sur n’importe quelle touche pour continuer.",
+  "option1": "Appuyez sur 1 pour acquitter l\u0027alarme.",
+  "option2": "Appuyez sur 2 pour ignorer l\u0027alarme.",
+  "option3": "Appuyez sur 3 pour repéter le message.",
+  "summary": "Il y\u0027a %d alarmes."
+}

@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "name": "root"
+  },
+  "type": "ia.container.flex",
+  "props": {
+    "direction": "column",
+    "style": {
+      "margin": "10px"
+    }
+  },
+  "custom": {},
+  "children": [
+    {
+      "type": "ia.input.toggle-switch",
+      "version": 0,
+      "props": {
+        "style": {
+          "margin": "10px"
+        }
+      },
+      "meta": {
+        "name": "AlarmToggle"
+      },
+      "propConfig": {
+        "props.value": {
+          "binding": {
+            "type": "tag",
+            "config": {
+              "path": "[default]Alarm Toggle"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "ia.display.gauge",
+      "version": 0,
+      "props": {
+        "style": {
+          "margin": "10px"
+        }
+      },
+      "meta": {
+        "name": "MotorRPM"
+      },
+      "propConfig": {
+        "props.value": {
+          "binding": {
+            "type": "tag",
+            "config": {
+              "path": "[default]Motor RPM"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "ia.input.slider",
+      "version": 0,
+      "props": {
+        "style": {
+          "margin": "10px"
+        }
+      },
+      "meta": {
+        "name": "MotorSetpoint"
+      },
+      "propConfig": {
+        "props.value": {
+          "binding": {
+            "type": "tag",
+            "config": {
+              "path": "[default]Motor Setpoint"
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "ia.input.numeric-entry-field",
+      "version": 0,
+      "props": {
+        "style": {
+          "margin": "10px"
+        }
+      },
+      "meta": {
+        "name": "WriteableTag"
+      },
+      "propConfig": {
+        "props.value": {
+          "binding": {
+            "type": "tag",
+            "config": {
+              "path": "[default]Writeable Tag"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+INSERT INTO artifact_type (name) VALUES (:name)

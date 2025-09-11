@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "securityLevelRules": {
+      "nodes": []
+    },
+    "type": "saml",
+    "userAttributeMapper": {
+      "id": {
+        "config": {
+          "attributePath": "/saml2p:Response/saml2:Assertion/saml2:Subject/saml2:NameID/text()"
+        },
+        "type": "direct"
+      },
+      "userName": {
+        "config": {
+          "attributePath": "/saml2p:Response/saml2:Assertion/saml2:Subject/saml2:NameID/text()"
+        },
+        "type": "direct"
+      }
+    },
+    "userGrants": {
+      "id": {},
+      "username": {}
+    }
+  },
+  "settings": {
+    "acsBinding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+    "assertionSignaturesRequired": false,
+    "forceAuthnEnabled": false,
+    "idpEntityId": "https://sso-f2cf514c.sso.duosecurity.com/saml2/sp/DI6UWTTHC4WT1B5GWDYM/metadata",
+    "idpMetadataUrl": "https://sso-f2cf514c.sso.duosecurity.com/saml2/sp/DI6UWTTHC4WT1B5GWDYM/metadata",
+    "idpMetadataUrlEnabled": true,
+    "nameIdFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+    "responseSignaturesRequired": true,
+    "signatureVerifyingCertificates": [
+      "MIIDDTCCAfWgAwIBAgIUIW5oda0M0FoRyoaTjwqioxwgaIcwDQYJKoZIhvcNAQELBQAwNjEVMBMGA1UECgwMRHVvIFNlY3VyaXR5MR0wGwYDVQQDDBRESTZVV1RUSEM0V1QxQjVHV0RZTTAeFw0yNTA4MjUxOTA0MzVaFw0zODAxMTkwMzE0MDdaMDYxFTATBgNVBAoMDER1byBTZWN1cml0eTEdMBsGA1UEAwwUREk2VVdUVEhDNFdUMUI1R1dEWU0wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCu/VpixgiY2c58hGvnzpti4h01pNyNGDOChTaZfu2u/bUdLrts6TjAlKl20zU/Rb5Znp/xVsMP9tmvljgbmkSviLbVr1GMgS+Q+UNXHD5olnJsKKfBjAKwSnmaKH74kvVTfcyGomdLYrWDPx3bCZ8dpnpKKoEMBRZsI5rPJzo24a9rWJKqvjLcTfALVSHaULIfRV+y2gHCmAkaa+qGQ+vLFo9H6Kym2jg10Ab8fk91vuVBc6d3Un7ebsYoYfdOeJAdepH79d7d6FCLqtBfnP0T1N9bDUQDkKVSLxJ5raNM7vrwkyz0br4Zj4T6yJntINuOvNdLCLQKjm7xYfO1kp2FAgMBAAGjEzARMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAAMPZK2q8iC8Zuo0tMWrlXieNnTPrbaVD+SwGHzQVujywfxr87lh3955g5gydKx0E9sOeTTk3QEBopMMO/wGkdT3OxctHLTSeo++Vkp3PsdedY2DzwuRv6Z6ZL3ycGylPE8XZsoseBaX9SNnV2L/xyKf3F8oRrPnPtkFoQMTRRTtrtzyQmZtQcqDpmjiXtFeJlWcIia89B1XLPoNcGqWqnfZ0Tq3PuI9IEwMn+HjIo0/L6eHl4rkqsSsR6fMYepkRXvCfGOgufF2f39R0Mf2gzZdYBh5a2/gTuuKoq9Ff5TwP2D4c99/eD87iDLE3sBmJeekOITo0OwpkFF3uRBoGt8\u003d"
+    ],
+    "signatureVerifyingKeys": [],
+    "spEntityIdEnabled": false,
+    "ssoServiceConfig": {
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST",
+      "uri": "https://sso-f2cf514c.sso.duosecurity.com/saml2/sp/DI6UWTTHC4WT1B5GWDYM/sso"
+    }
+  }
+}
