@@ -3,10 +3,11 @@ services:
     image: "inductiveautomation/ignition:8.3.0-rc1"
     restart: unless-stopped
     ports:
-      - 8090:8088
+      - 8088:8088
     volumes:
-      - ./ignition/data:/usr/local/bin/ignition/data
-      # - ign_data:/var/lib/ignition/data
+      - ./ignition/data/config:/usr/local/bin/ignition/data/config
+      - ./ignition/data/projects:/usr/local/bin/ignition/data/projects
+      - ./ignition/data/commissioning.json:/usr/local/bin/ignition/data/commissioning.json
       - ./ignition/audio:/home/audio
       - ./ignition/backups:/home/backups
     environment:
@@ -64,15 +65,17 @@ services:
   postgres:
     image: postgres:15.4
     restart: unless-stopped
+    container_name: postgres
     environment:
       POSTGRES_PASSWORD: password
       POSTGRES_USER: admin
       POSTGRES_DB: postgres
       TZ: America/Denver
     ports:
-     - 5433:5432
+     - 5432:5432
     volumes:
-      - ./postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
+      - ./postgres_init:/docker-entrypoint-initdb.d  
     networks:
       - net
 
@@ -108,6 +111,5 @@ networks:
 
 volumes:
   pgadmin:
-  ign_data:
-
+  postgres_data:
 

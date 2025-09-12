@@ -1,1 +1,0 @@
-def doDelete(request, session):

@@ -9,12 +9,12 @@
     "type": "INTERNAL"
   },
   "settings": {
-    "passwordComplexity": 0,
-    "passwordContainsPassword": false,
-    "passwordContainsUserName": false,
+    "passwordComplexity": 3,
+    "passwordContainsPassword": true,
+    "passwordContainsUserName": true,
     "passwordHistory": 0,
     "passwordMaxAge": 0,
-    "passwordMaxRepeatedChars": 0,
-    "passwordMinLength": 0
+    "passwordMaxRepeatedChars": 3,
+    "passwordMinLength": 8
   }
 }

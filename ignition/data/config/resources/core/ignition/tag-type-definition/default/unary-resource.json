@@ -3,9 +3,7 @@
   "version": 1,
   "restricted": false,
   "overridable": true,
-  "files": [
-    "udts.json"
-  ],
+  "files": [],
   "attributes": {
     "config": {}
   }

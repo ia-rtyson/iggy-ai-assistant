@@ -1,1 +1,0 @@
-def doOptions(request, session):

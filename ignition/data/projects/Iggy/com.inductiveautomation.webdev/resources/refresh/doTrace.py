@@ -1,1 +1,0 @@
-def doTrace(request, session):

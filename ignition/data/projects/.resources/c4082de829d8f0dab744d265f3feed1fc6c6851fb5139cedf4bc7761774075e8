@@ -1,1 +1,0 @@
-{"meta":{"name":"CorrectedBoundView"},"props":{},"root":{"children":[{"meta":{"name":"Label"},"position":{"height":50,"width":200,"x":166,"y":128},"props":{"text":{"binding":{"config":{"bidirectional":false,"mode":"direct","tagPath":"[default]Motor RPM"},"type":"tag"}}},"type":"ia.display.label"}],"meta":{"name":"root"},"type":"ia.container.coord"},"type":"view"}

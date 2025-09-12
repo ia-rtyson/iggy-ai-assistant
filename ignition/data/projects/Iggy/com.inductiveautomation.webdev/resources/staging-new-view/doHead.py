@@ -1,1 +1,0 @@
-def doHead(request, session):
