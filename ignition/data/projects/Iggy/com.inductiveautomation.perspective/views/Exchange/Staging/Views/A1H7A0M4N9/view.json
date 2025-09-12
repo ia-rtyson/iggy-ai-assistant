@@ -1,0 +1,74 @@
+
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "justify": "center",
+      "alignItems": "center"
+    },
+    "type": "ia.container.flex",
+    "children": [
+      {
+        "meta": {
+          "name": "OrangeDoggyLabel"
+        },
+        "position": {
+          "basis": "40px",
+          "grow": 0,
+          "shrink": 0,
+          "align": "center"
+        },
+        "props": {
+          "text": "Here is your Orange Doggy!",
+          "style": {
+            "fontSize": "24px",
+            "color": "#FF8C00"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "OrangeDoggyIcon"
+        },
+        "position": {
+          "basis": "100px",
+          "grow": 0,
+          "shrink": 0,
+          "align": "center"
+        },
+        "props": {
+          "path": "material/pets",
+          "color": "#FFA500",
+          "style": {
+            "width": "80px",
+            "height": "80px"
+          }
+        },
+        "type": "ia.display.icon"
+      },
+      {
+        "meta": {
+          "name": "OrangeDoggyImage"
+        },
+        "position": {
+          "basis": "200px",
+          "grow": 1,
+          "shrink": 1,
+          "align": "center"
+        },
+        "props": {
+          "source": "https://via.placeholder.com/200x200/FFA500/FFFFFF?text=Orange+Doggy",
+          "mode": "fit"
+        },
+        "type": "ia.display.image"
+      }
+    ]
+  }
+}

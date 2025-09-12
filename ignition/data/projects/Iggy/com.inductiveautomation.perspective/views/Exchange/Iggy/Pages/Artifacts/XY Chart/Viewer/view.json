@@ -1,0 +1,999 @@
+{
+  "custom": {
+    "chartConfig": {
+      "dataSources": {
+        "example": [
+          {
+            "output_temp": 38,
+            "process_temp": 63,
+            "t_stamp": "Tue Aug 07 2018"
+          },
+          {
+            "output_temp": 39,
+            "process_temp": 59,
+            "t_stamp": "Tue Aug 08 2018"
+          },
+          {
+            "output_temp": 41,
+            "process_temp": 62,
+            "t_stamp": "Tue Aug 09 2018"
+          },
+          {
+            "output_temp": 37,
+            "process_temp": 63,
+            "t_stamp": "Tue Aug 10 2018"
+          },
+          {
+            "output_temp": 31,
+            "process_temp": 48,
+            "t_stamp": "Tue Aug 11 2018"
+          },
+          {
+            "output_temp": 42,
+            "process_temp": 54,
+            "t_stamp": "Tue Aug 12 2018"
+          },
+          {
+            "output_temp": 38,
+            "process_temp": 49,
+            "t_stamp": "Tue Aug 13 2018"
+          },
+          {
+            "output_temp": 34,
+            "process_temp": 69,
+            "t_stamp": "Tue Aug 14 2018"
+          },
+          {
+            "output_temp": 56,
+            "process_temp": 73,
+            "t_stamp": "Tue Aug 15 2018"
+          },
+          {
+            "output_temp": 32,
+            "process_temp": 61,
+            "t_stamp": "Tue Aug 16 2018"
+          },
+          {
+            "output_temp": 62,
+            "process_temp": 73,
+            "t_stamp": "Tue Aug 17 2018"
+          }
+        ]
+      },
+      "series": [
+        {
+          "candlestick": {
+            "appearance": {
+              "deriveFieldsFromData": {
+                "fill": {
+                  "color": "",
+                  "opacity": ""
+                },
+                "stroke": {
+                  "color": "",
+                  "opacity": "",
+                  "width": ""
+                }
+              },
+              "fill": {
+                "color": "",
+                "opacity": 1
+              },
+              "heatRules": {
+                "dataField": "",
+                "enabled": false,
+                "max": "",
+                "min": ""
+              },
+              "stacked": false,
+              "stroke": {
+                "color": "",
+                "opacity": 1,
+                "width": 1
+              }
+            },
+            "high": {
+              "x": "",
+              "y": ""
+            },
+            "low": {
+              "x": "",
+              "y": ""
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "column": {
+            "appearance": {
+              "deriveFieldsFromData": {
+                "fill": {
+                  "color": "",
+                  "opacity": ""
+                },
+                "stroke": {
+                  "color": "",
+                  "opacity": "",
+                  "width": ""
+                }
+              },
+              "fill": {
+                "color": "",
+                "opacity": 1
+              },
+              "heatRules": {
+                "dataField": "",
+                "enabled": false,
+                "max": "",
+                "min": ""
+              },
+              "height": null,
+              "stacked": false,
+              "stroke": {
+                "color": "",
+                "opacity": 1,
+                "width": 1
+              },
+              "width": null
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "data": {
+            "source": "example",
+            "x": "t_stamp",
+            "y": "process_temp"
+          },
+          "defaultState": {
+            "visible": true
+          },
+          "hiddenInLegend": false,
+          "label": {
+            "text": "Process Temp"
+          },
+          "line": {
+            "appearance": {
+              "bullets": [
+                {
+                  "deriveFieldsFromData": {
+                    "fill": {
+                      "color": "",
+                      "opacity": ""
+                    },
+                    "rotation": "",
+                    "stroke": {
+                      "color": "",
+                      "opacity": "",
+                      "width": ""
+                    }
+                  },
+                  "enabled": false,
+                  "fill": {
+                    "color": "",
+                    "opacity": 1
+                  },
+                  "heatRules": {
+                    "dataField": "",
+                    "enabled": false,
+                    "max": 100,
+                    "min": 2
+                  },
+                  "height": 10,
+                  "label": {
+                    "position": {
+                      "dx": 0,
+                      "dy": 0
+                    },
+                    "text": "{value}"
+                  },
+                  "render": "circle",
+                  "rotation": 0,
+                  "stroke": {
+                    "color": "",
+                    "opacity": 1,
+                    "width": 1
+                  },
+                  "tooltip": {
+                    "background": {
+                      "color": "",
+                      "opacity": 1
+                    },
+                    "cornerRadius": 3,
+                    "enabled": true,
+                    "pointerLength": 4,
+                    "text": "{name}: [bold]{valueY}[/]"
+                  },
+                  "width": 10
+                }
+              ],
+              "connect": true,
+              "fill": {
+                "color": "",
+                "opacity": 0
+              },
+              "minDistance": 0.5,
+              "stroke": {
+                "color": "",
+                "dashArray": "",
+                "opacity": 1,
+                "width": 3
+              },
+              "tensionX": 1,
+              "tensionY": 1
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "name": "process temp",
+          "render": "line",
+          "stepLine": {
+            "appearance": {
+              "bullets": [
+                {
+                  "deriveFieldsFromData": {
+                    "fill": {
+                      "color": "",
+                      "opacity": ""
+                    },
+                    "rotation": "",
+                    "stroke": {
+                      "color": "",
+                      "opacity": "",
+                      "width": ""
+                    }
+                  },
+                  "enabled": true,
+                  "fill": {
+                    "color": "",
+                    "opacity": 1
+                  },
+                  "heatRules": {
+                    "dataField": "",
+                    "enabled": false,
+                    "max": 100,
+                    "min": 2
+                  },
+                  "height": 10,
+                  "label": {
+                    "position": {
+                      "dx": 0,
+                      "dy": 0
+                    },
+                    "text": "{value}"
+                  },
+                  "render": "circle",
+                  "rotation": 0,
+                  "stroke": {
+                    "color": "",
+                    "opacity": 1,
+                    "width": 1
+                  },
+                  "tooltip": {
+                    "background": {
+                      "color": "",
+                      "opacity": 1
+                    },
+                    "cornerRadius": 3,
+                    "enabled": true,
+                    "pointerLength": 4,
+                    "text": "{name}: [bold]{valueY}[/]"
+                  },
+                  "width": 10
+                }
+              ],
+              "connect": true,
+              "fill": {
+                "color": "",
+                "opacity": 0
+              },
+              "minDistance": 0.5,
+              "stroke": {
+                "color": "",
+                "dashArray": "",
+                "opacity": 1,
+                "width": 3
+              },
+              "tensionX": 1,
+              "tensionY": 1
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "tooltip": {
+            "background": {
+              "color": "",
+              "opacity": 1
+            },
+            "cornerRadius": 3,
+            "enabled": true,
+            "pointerLength": 4,
+            "text": "{name}: [bold]{valueY}[/]"
+          },
+          "visible": true,
+          "xAxis": "time",
+          "yAxis": "process temp",
+          "zIndex": 0
+        },
+        {
+          "candlestick": {
+            "appearance": {
+              "deriveFieldsFromData": {
+                "fill": {
+                  "color": "",
+                  "opacity": ""
+                },
+                "stroke": {
+                  "color": "",
+                  "opacity": "",
+                  "width": ""
+                }
+              },
+              "fill": {
+                "color": "",
+                "opacity": 1
+              },
+              "heatRules": {
+                "dataField": "",
+                "enabled": false,
+                "max": "",
+                "min": ""
+              },
+              "stacked": false,
+              "stroke": {
+                "color": "",
+                "opacity": 1,
+                "width": 1
+              }
+            },
+            "high": {
+              "x": "",
+              "y": ""
+            },
+            "low": {
+              "x": "",
+              "y": ""
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "column": {
+            "appearance": {
+              "deriveFieldsFromData": {
+                "fill": {
+                  "color": "",
+                  "opacity": ""
+                },
+                "stroke": {
+                  "color": "",
+                  "opacity": "",
+                  "width": ""
+                }
+              },
+              "fill": {
+                "color": "",
+                "opacity": 1
+              },
+              "heatRules": {
+                "dataField": "",
+                "enabled": false,
+                "max": "",
+                "min": ""
+              },
+              "height": null,
+              "stacked": false,
+              "stroke": {
+                "color": "",
+                "opacity": 1,
+                "width": 1
+              },
+              "width": null
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "data": {
+            "source": "example",
+            "x": "t_stamp",
+            "y": "output_temp"
+          },
+          "defaultState": {
+            "visible": true
+          },
+          "hiddenInLegend": false,
+          "label": {
+            "text": "Output Temp"
+          },
+          "line": {
+            "appearance": {
+              "bullets": [
+                {
+                  "deriveFieldsFromData": {
+                    "fill": {
+                      "color": "",
+                      "opacity": ""
+                    },
+                    "rotation": "",
+                    "stroke": {
+                      "color": "",
+                      "opacity": "",
+                      "width": ""
+                    }
+                  },
+                  "enabled": false,
+                  "fill": {
+                    "color": "",
+                    "opacity": 1
+                  },
+                  "heatRules": {
+                    "dataField": "",
+                    "enabled": false,
+                    "max": 100,
+                    "min": 2
+                  },
+                  "height": 10,
+                  "label": {
+                    "position": {
+                      "dx": 0,
+                      "dy": 0
+                    },
+                    "text": "{value}"
+                  },
+                  "render": "circle",
+                  "rotation": 0,
+                  "stroke": {
+                    "color": "",
+                    "opacity": 1,
+                    "width": 1
+                  },
+                  "tooltip": {
+                    "background": {
+                      "color": "",
+                      "opacity": 1
+                    },
+                    "cornerRadius": 3,
+                    "enabled": true,
+                    "pointerLength": 4,
+                    "text": "{name}: [bold]{valueY}[/]"
+                  },
+                  "width": 10
+                }
+              ],
+              "connect": true,
+              "fill": {
+                "color": "",
+                "opacity": 0
+              },
+              "minDistance": 0.5,
+              "stroke": {
+                "color": "",
+                "dashArray": "",
+                "opacity": 1,
+                "width": 3
+              },
+              "tensionX": 1,
+              "tensionY": 1
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "name": "output temp",
+          "render": "line",
+          "stepLine": {
+            "appearance": {
+              "bullets": [
+                {
+                  "deriveFieldsFromData": {
+                    "fill": {
+                      "color": "",
+                      "opacity": ""
+                    },
+                    "rotation": "",
+                    "stroke": {
+                      "color": "",
+                      "opacity": "",
+                      "width": ""
+                    }
+                  },
+                  "enabled": true,
+                  "fill": {
+                    "color": "",
+                    "opacity": 1
+                  },
+                  "heatRules": {
+                    "dataField": "",
+                    "enabled": false,
+                    "max": 100,
+                    "min": 2
+                  },
+                  "height": 10,
+                  "label": {
+                    "position": {
+                      "dx": 0,
+                      "dy": 0
+                    },
+                    "text": "{value}"
+                  },
+                  "render": "circle",
+                  "rotation": 0,
+                  "stroke": {
+                    "color": "",
+                    "opacity": 1,
+                    "width": 1
+                  },
+                  "tooltip": {
+                    "background": {
+                      "color": "",
+                      "opacity": 1
+                    },
+                    "cornerRadius": 3,
+                    "enabled": true,
+                    "pointerLength": 4,
+                    "text": "{name}: [bold]{valueY}[/]"
+                  },
+                  "width": 10
+                }
+              ],
+              "connect": true,
+              "fill": {
+                "color": "",
+                "opacity": 0
+              },
+              "minDistance": 0.5,
+              "stroke": {
+                "color": "",
+                "dashArray": "",
+                "opacity": 1,
+                "width": 3
+              },
+              "tensionX": 1,
+              "tensionY": 1
+            },
+            "open": {
+              "x": "",
+              "y": ""
+            }
+          },
+          "tooltip": {
+            "background": {
+              "color": "",
+              "opacity": 1
+            },
+            "cornerRadius": 3,
+            "enabled": true,
+            "pointerLength": 4,
+            "text": "{name}: [bold]{valueY}[/]"
+          },
+          "visible": true,
+          "xAxis": "time",
+          "yAxis": "output temp",
+          "zIndex": 0
+        }
+      ],
+      "xAxes": [
+        {
+          "appearance": {
+            "font": {
+              "size": "",
+              "weight": 500
+            },
+            "grid": {
+              "color": "",
+              "dashArray": "",
+              "minDistance": 60,
+              "opacity": 1,
+              "position": 0.5
+            },
+            "inside": false,
+            "labels": {
+              "color": "",
+              "horizontalCenter": "middle",
+              "opacity": 1,
+              "rotation": 0,
+              "verticalCenter": "middle"
+            },
+            "opposite": false
+          },
+          "category": {
+            "break": {
+              "enabled": false,
+              "endCategory": "",
+              "size": 0.05,
+              "startCategory": ""
+            }
+          },
+          "date": {
+            "baseInterval": {
+              "count": 1,
+              "enabled": false,
+              "skipEmptyPeriods": false,
+              "timeUnit": "hour"
+            },
+            "break": {
+              "enabled": false,
+              "endDate": "",
+              "size": 0.05,
+              "startDate": ""
+            },
+            "format": "M/d",
+            "inputFormat": "yyyy-MM-dd kk:mm:ss",
+            "range": {
+              "max": "",
+              "min": "",
+              "useStrict": false
+            }
+          },
+          "inversed": false,
+          "label": {
+            "color": "",
+            "enabled": true,
+            "text": "Time"
+          },
+          "name": "time",
+          "render": "date",
+          "tooltip": {
+            "background": {
+              "color": "",
+              "opacity": 1
+            },
+            "cornerRadius": 3,
+            "enabled": true,
+            "pointerLength": 4,
+            "text": ""
+          },
+          "value": {
+            "break": {
+              "enabled": false,
+              "endValue": 100,
+              "size": 0.05,
+              "startValue": 0
+            },
+            "format": "#,###.##",
+            "logarithmic": false,
+            "range": {
+              "max": "",
+              "min": "",
+              "useStrict": false
+            }
+          },
+          "visible": true
+        }
+      ],
+      "yAxes": [
+        {
+          "appearance": {
+            "font": {
+              "size": "",
+              "weight": 500
+            },
+            "grid": {
+              "color": "",
+              "dashArray": "",
+              "minDistance": null,
+              "opacity": 1,
+              "position": 0.5
+            },
+            "inside": false,
+            "labels": {
+              "color": "",
+              "horizontalCenter": "middle",
+              "opacity": 1,
+              "rotation": 0,
+              "verticalCenter": "middle"
+            },
+            "opposite": false
+          },
+          "category": {
+            "break": {
+              "enabled": false,
+              "endCategory": "",
+              "size": 0.05,
+              "startCategory": ""
+            }
+          },
+          "date": {
+            "baseInterval": {
+              "count": 1,
+              "enabled": false,
+              "skipEmptyPeriods": false,
+              "timeUnit": "hour"
+            },
+            "break": {
+              "enabled": false,
+              "endDate": "",
+              "size": 0.05,
+              "startDate": ""
+            },
+            "format": "M/d/yyyy HH:mm:ss",
+            "inputFormat": "yyyy-MM-dd kk:mm:ss",
+            "range": {
+              "max": "",
+              "min": "",
+              "useStrict": false
+            }
+          },
+          "inversed": false,
+          "label": {
+            "color": "",
+            "enabled": true,
+            "text": "Process Temp"
+          },
+          "name": "process temp",
+          "render": "value",
+          "tooltip": {
+            "background": {
+              "color": "",
+              "opacity": 1
+            },
+            "cornerRadius": 3,
+            "enabled": true,
+            "pointerLength": 4,
+            "text": ""
+          },
+          "value": {
+            "break": {
+              "enabled": false,
+              "endValue": 100,
+              "size": 0.05,
+              "startValue": 0
+            },
+            "format": "#,###.##",
+            "logarithmic": false,
+            "range": {
+              "max": "",
+              "min": "",
+              "useStrict": false
+            }
+          },
+          "visible": true
+        },
+        {
+          "appearance": {
+            "font": {
+              "size": "",
+              "weight": 500
+            },
+            "grid": {
+              "color": "",
+              "dashArray": "4,4",
+              "minDistance": null,
+              "opacity": 1,
+              "position": 0.5
+            },
+            "inside": false,
+            "labels": {
+              "color": "",
+              "horizontalCenter": "middle",
+              "opacity": 1,
+              "rotation": 0,
+              "verticalCenter": "middle"
+            },
+            "opposite": true
+          },
+          "category": {
+            "break": {
+              "enabled": false,
+              "endCategory": "",
+              "size": 0.05,
+              "startCategory": ""
+            }
+          },
+          "date": {
+            "baseInterval": {
+              "count": 1,
+              "enabled": false,
+              "skipEmptyPeriods": false,
+              "timeUnit": "hour"
+            },
+            "break": {
+              "enabled": false,
+              "endDate": "",
+              "size": 0.05,
+              "startDate": ""
+            },
+            "format": "M/d/yyyy",
+            "inputFormat": "yyyy-MM-dd kk:mm:ss",
+            "range": {
+              "max": "",
+              "min": "",
+              "useStrict": false
+            }
+          },
+          "inversed": false,
+          "label": {
+            "color": "",
+            "enabled": true,
+            "text": "Output Temp"
+          },
+          "name": "output temp",
+          "render": "value",
+          "tooltip": {
+            "background": {
+              "color": "",
+              "opacity": 1
+            },
+            "cornerRadius": 3,
+            "enabled": true,
+            "pointerLength": 4,
+            "text": ""
+          },
+          "value": {
+            "break": {
+              "enabled": false,
+              "endValue": 100,
+              "size": 0.05,
+              "startValue": 0
+            },
+            "format": "#,###.##",
+            "logarithmic": false,
+            "range": {
+              "max": "",
+              "min": "",
+              "useStrict": false
+            }
+          },
+          "visible": true
+        }
+      ]
+    }
+  },
+  "params": {
+    "content": ""
+  },
+  "propConfig": {
+    "custom.chartConfig": {
+      "binding": {
+        "config": {
+          "path": "view.params.content"
+        },
+        "transforms": [
+          {
+            "code": "\tchartConfig \u003d {\n\t\t\t\t\t\"dataSources\": {\n\t\t\t\t\t\t\"example\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 38,\n\t\t\t\t\t\t\t\t\"process_temp\": 63,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 07 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 39,\n\t\t\t\t\t\t\t\t\"process_temp\": 59,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 08 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 41,\n\t\t\t\t\t\t\t\t\"process_temp\": 62,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 09 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 37,\n\t\t\t\t\t\t\t\t\"process_temp\": 63,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 10 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 31,\n\t\t\t\t\t\t\t\t\"process_temp\": 48,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 11 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 42,\n\t\t\t\t\t\t\t\t\"process_temp\": 54,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 12 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 38,\n\t\t\t\t\t\t\t\t\"process_temp\": 49,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 13 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 34,\n\t\t\t\t\t\t\t\t\"process_temp\": 69,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 14 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 56,\n\t\t\t\t\t\t\t\t\"process_temp\": 73,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 15 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 32,\n\t\t\t\t\t\t\t\t\"process_temp\": 61,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 16 2018\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"output_temp\": 62,\n\t\t\t\t\t\t\t\t\"process_temp\": 73,\n\t\t\t\t\t\t\t\t\"t_stamp\": \"Tue Aug 17 2018\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},\n\t\t\t\t\t\"series\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"candlestick\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"min\": \"\"\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"stacked\": False,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"high\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"low\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"column\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"min\": \"\"\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"height\": None,\n\t\t\t\t\t\t\t\t\t\"stacked\": False,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"width\": None\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"data\": {\n\t\t\t\t\t\t\t\t\"source\": \"example\",\n\t\t\t\t\t\t\t\t\"x\": \"t_stamp\",\n\t\t\t\t\t\t\t\t\"y\": \"process_temp\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"defaultState\": {\n\t\t\t\t\t\t\t\t\"visible\": True\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"hiddenInLegend\": False,\n\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\"text\": \"Process Temp\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"line\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"bullets\": [\n\t\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"rotation\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\t\t\"max\": 100,\n\t\t\t\t\t\t\t\t\t\t\t\t\"min\": 2\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"height\": 10,\n\t\t\t\t\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"position\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dx\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dy\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{value}\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"render\": \"circle\",\n\t\t\t\t\t\t\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{name}: [bold]{valueY}[/]\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"width\": 10\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\"connect\": True,\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 0\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"minDistance\": 0.5,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"dashArray\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 3\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"tensionX\": 1,\n\t\t\t\t\t\t\t\t\t\"tensionY\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"name\": \"process temp\",\n\t\t\t\t\t\t\t\"render\": \"line\",\n\t\t\t\t\t\t\t\"stepLine\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"bullets\": [\n\t\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"rotation\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\t\t\"max\": 100,\n\t\t\t\t\t\t\t\t\t\t\t\t\"min\": 2\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"height\": 10,\n\t\t\t\t\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"position\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dx\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dy\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{value}\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"render\": \"circle\",\n\t\t\t\t\t\t\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{name}: [bold]{valueY}[/]\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"width\": 10\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\"connect\": True,\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 0\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"minDistance\": 0.5,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"dashArray\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 3\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"tensionX\": 1,\n\t\t\t\t\t\t\t\t\t\"tensionY\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\"text\": \"{name}: [bold]{valueY}[/]\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"visible\": True,\n\t\t\t\t\t\t\t\"xAxis\": \"time\",\n\t\t\t\t\t\t\t\"yAxis\": \"process temp\",\n\t\t\t\t\t\t\t\"zIndex\": 0\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"candlestick\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"min\": \"\"\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"stacked\": False,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"high\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"low\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"column\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"min\": \"\"\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"height\": None,\n\t\t\t\t\t\t\t\t\t\"stacked\": False,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"width\": None\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"data\": {\n\t\t\t\t\t\t\t\t\"source\": \"example\",\n\t\t\t\t\t\t\t\t\"x\": \"t_stamp\",\n\t\t\t\t\t\t\t\t\"y\": \"output_temp\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"defaultState\": {\n\t\t\t\t\t\t\t\t\"visible\": True\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"hiddenInLegend\": False,\n\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\"text\": \"Output Temp\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"line\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"bullets\": [\n\t\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"rotation\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\t\t\"max\": 100,\n\t\t\t\t\t\t\t\t\t\t\t\t\"min\": 2\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"height\": 10,\n\t\t\t\t\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"position\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dx\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dy\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{value}\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"render\": \"circle\",\n\t\t\t\t\t\t\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{name}: [bold]{valueY}[/]\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"width\": 10\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\"connect\": True,\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 0\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"minDistance\": 0.5,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"dashArray\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 3\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"tensionX\": 1,\n\t\t\t\t\t\t\t\t\t\"tensionY\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"name\": \"output temp\",\n\t\t\t\t\t\t\t\"render\": \"line\",\n\t\t\t\t\t\t\t\"stepLine\": {\n\t\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\t\"bullets\": [\n\t\t\t\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\t\t\t\"deriveFieldsFromData\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"rotation\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"width\": \"\"\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"heatRules\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"dataField\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\t\t\t\"max\": 100,\n\t\t\t\t\t\t\t\t\t\t\t\t\"min\": 2\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"height\": 10,\n\t\t\t\t\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"position\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dx\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"dy\": 0\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{value}\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"render\": \"circle\",\n\t\t\t\t\t\t\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\t\t\"width\": 1\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\t\t\t\t\"text\": \"{name}: [bold]{valueY}[/]\"\n\t\t\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\t\t\"width\": 10\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t],\n\t\t\t\t\t\t\t\t\t\"connect\": True,\n\t\t\t\t\t\t\t\t\t\"fill\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 0\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"minDistance\": 0.5,\n\t\t\t\t\t\t\t\t\t\"stroke\": {\n\t\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"dashArray\": \"\",\n\t\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\t\"width\": 3\n\t\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\t\"tensionX\": 1,\n\t\t\t\t\t\t\t\t\t\"tensionY\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"open\": {\n\t\t\t\t\t\t\t\t\t\"x\": \"\",\n\t\t\t\t\t\t\t\t\t\"y\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\"text\": \"{name}: [bold]{valueY}[/]\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"visible\": True,\n\t\t\t\t\t\t\t\"xAxis\": \"time\",\n\t\t\t\t\t\t\t\"yAxis\": \"output temp\",\n\t\t\t\t\t\t\t\"zIndex\": 0\n\t\t\t\t\t\t}\n\t\t\t\t\t],\n\t\t\t\t\t\"xAxes\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\"font\": {\n\t\t\t\t\t\t\t\t\t\"size\": \"\",\n\t\t\t\t\t\t\t\t\t\"weight\": 500\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"grid\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"dashArray\": \"\",\n\t\t\t\t\t\t\t\t\t\"minDistance\": 60,\n\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\"position\": 0.5\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"inside\": False,\n\t\t\t\t\t\t\t\t\"labels\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"horizontalCenter\": \"middle\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\t\t\t\t\"verticalCenter\": \"middle\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"opposite\": False\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"category\": {\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endCategory\": \"\",\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startCategory\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"date\": {\n\t\t\t\t\t\t\t\t\"baseInterval\": {\n\t\t\t\t\t\t\t\t\t\"count\": 1,\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"skipEmptyPeriods\": False,\n\t\t\t\t\t\t\t\t\t\"timeUnit\": \"hour\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endDate\": \"\",\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startDate\": \"\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"format\": \"M/d\",\n\t\t\t\t\t\t\t\t\"inputFormat\": \"yyyy-MM-dd kk:mm:ss\",\n\t\t\t\t\t\t\t\t\"range\": {\n\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\"min\": \"\",\n\t\t\t\t\t\t\t\t\t\"useStrict\": False\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"inversed\": False,\n\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"text\": \"Time\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"name\": \"time\",\n\t\t\t\t\t\t\t\"render\": \"date\",\n\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\"text\": \"\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"value\": {\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endValue\": 100,\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startValue\": 0\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"format\": \"#,###.##\",\n\t\t\t\t\t\t\t\t\"logarithmic\": False,\n\t\t\t\t\t\t\t\t\"range\": {\n\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\"min\": \"\",\n\t\t\t\t\t\t\t\t\t\"useStrict\": False\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"visible\": True\n\t\t\t\t\t\t}\n\t\t\t\t\t],\n\t\t\t\t\t\"yAxes\": [\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\"font\": {\n\t\t\t\t\t\t\t\t\t\"size\": \"\",\n\t\t\t\t\t\t\t\t\t\"weight\": 500\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"grid\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"dashArray\": \"\",\n\t\t\t\t\t\t\t\t\t\"minDistance\": None,\n\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\"position\": 0.5\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"inside\": False,\n\t\t\t\t\t\t\t\t\"labels\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"horizontalCenter\": \"middle\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\t\t\t\t\"verticalCenter\": \"middle\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"opposite\": False\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"category\": {\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endCategory\": \"\",\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startCategory\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"date\": {\n\t\t\t\t\t\t\t\t\"baseInterval\": {\n\t\t\t\t\t\t\t\t\t\"count\": 1,\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"skipEmptyPeriods\": False,\n\t\t\t\t\t\t\t\t\t\"timeUnit\": \"hour\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endDate\": \"\",\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startDate\": \"\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"format\": \"M/d/yyyy HH:mm:ss\",\n\t\t\t\t\t\t\t\t\"inputFormat\": \"yyyy-MM-dd kk:mm:ss\",\n\t\t\t\t\t\t\t\t\"range\": {\n\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\"min\": \"\",\n\t\t\t\t\t\t\t\t\t\"useStrict\": False\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"inversed\": False,\n\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"text\": \"Process Temp\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"name\": \"process temp\",\n\t\t\t\t\t\t\t\"render\": \"value\",\n\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\"text\": \"\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"value\": {\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endValue\": 100,\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startValue\": 0\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"format\": \"#,###.##\",\n\t\t\t\t\t\t\t\t\"logarithmic\": False,\n\t\t\t\t\t\t\t\t\"range\": {\n\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\"min\": \"\",\n\t\t\t\t\t\t\t\t\t\"useStrict\": False\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"visible\": True\n\t\t\t\t\t\t},\n\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\"appearance\": {\n\t\t\t\t\t\t\t\t\"font\": {\n\t\t\t\t\t\t\t\t\t\"size\": \"\",\n\t\t\t\t\t\t\t\t\t\"weight\": 500\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"grid\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"dashArray\": \"4,4\",\n\t\t\t\t\t\t\t\t\t\"minDistance\": None,\n\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\"position\": 0.5\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"inside\": False,\n\t\t\t\t\t\t\t\t\"labels\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"horizontalCenter\": \"middle\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1,\n\t\t\t\t\t\t\t\t\t\"rotation\": 0,\n\t\t\t\t\t\t\t\t\t\"verticalCenter\": \"middle\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"opposite\": True\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"category\": {\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endCategory\": \"\",\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startCategory\": \"\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"date\": {\n\t\t\t\t\t\t\t\t\"baseInterval\": {\n\t\t\t\t\t\t\t\t\t\"count\": 1,\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"skipEmptyPeriods\": False,\n\t\t\t\t\t\t\t\t\t\"timeUnit\": \"hour\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endDate\": \"\",\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startDate\": \"\"\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"format\": \"M/d/yyyy\",\n\t\t\t\t\t\t\t\t\"inputFormat\": \"yyyy-MM-dd kk:mm:ss\",\n\t\t\t\t\t\t\t\t\"range\": {\n\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\"min\": \"\",\n\t\t\t\t\t\t\t\t\t\"useStrict\": False\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"inversed\": False,\n\t\t\t\t\t\t\t\"label\": {\n\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"text\": \"Output Temp\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"name\": \"output temp\",\n\t\t\t\t\t\t\t\"render\": \"value\",\n\t\t\t\t\t\t\t\"tooltip\": {\n\t\t\t\t\t\t\t\t\"background\": {\n\t\t\t\t\t\t\t\t\t\"color\": \"\",\n\t\t\t\t\t\t\t\t\t\"opacity\": 1\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"cornerRadius\": 3,\n\t\t\t\t\t\t\t\t\"enabled\": True,\n\t\t\t\t\t\t\t\t\"pointerLength\": 4,\n\t\t\t\t\t\t\t\t\"text\": \"\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"value\": {\n\t\t\t\t\t\t\t\t\"break\": {\n\t\t\t\t\t\t\t\t\t\"enabled\": False,\n\t\t\t\t\t\t\t\t\t\"endValue\": 100,\n\t\t\t\t\t\t\t\t\t\"size\": 0.05,\n\t\t\t\t\t\t\t\t\t\"startValue\": 0\n\t\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\t\"format\": \"#,###.##\",\n\t\t\t\t\t\t\t\t\"logarithmic\": False,\n\t\t\t\t\t\t\t\t\"range\": {\n\t\t\t\t\t\t\t\t\t\"max\": \"\",\n\t\t\t\t\t\t\t\t\t\"min\": \"\",\n\t\t\t\t\t\t\t\t\t\"useStrict\": False\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"visible\": True\n\t\t\t\t\t\t}\n\t\t\t\t\t]\n\t\t\t\t}\n\ttry:\n\t\tconfig \u003d system.util.jsonDecode(value)\n\t\t\n\t\tfor k in config:\n\t\t\tchartConfig[k] \u003d config[k]\n\t\tself.view.custom.jsonFailed \u003d False\n\t\treturn chartConfig\n\texcept:\n\t\tself.view.custom.jsonFailed \u003d True\n\t\treturn chartConfig",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "custom.jsonFailed": {
+      "binding": {
+        "config": {
+          "expression": "false"
+        },
+        "type": "expr"
+      }
+    },
+    "params.content": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "props": {
+              "style": {
+                "classes": "component/title"
+              },
+              "text": "XY Chart"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Uuid"
+            },
+            "position": {
+              "grow": 1
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "if({view.custom.jsonFailed}, \"JSON Error\", \"\")"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "fontFamily": "Noto Sans",
+                "fontSize": "14px",
+                "fontStyle": "italic",
+                "textAlign": "right",
+                "textTransform": "uppercase"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "Header"
+        },
+        "position": {
+          "basis": "50px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "XYChart"
+        },
+        "position": {
+          "basis": "375px",
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.dataSources": {
+            "binding": {
+              "config": {
+                "path": "view.custom.chartConfig.dataSources"
+              },
+              "type": "property"
+            }
+          },
+          "props.series": {
+            "binding": {
+              "config": {
+                "path": "view.custom.chartConfig.series"
+              },
+              "type": "property"
+            }
+          },
+          "props.xAxes": {
+            "binding": {
+              "config": {
+                "path": "view.custom.chartConfig.xAxes"
+              },
+              "type": "property"
+            }
+          },
+          "props.yAxes": {
+            "binding": {
+              "config": {
+                "path": "view.custom.chartConfig.yAxes"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "type": "ia.chart.xy"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "overflow": "visible"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

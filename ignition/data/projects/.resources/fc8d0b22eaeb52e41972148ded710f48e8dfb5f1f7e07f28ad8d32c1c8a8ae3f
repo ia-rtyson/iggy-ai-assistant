@@ -1,0 +1,314 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1280,
+      "height": 900
+    }
+  },
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column"
+    },
+    "children": [
+      {
+        "meta": {
+          "name": "MenuNavigationBar"
+        },
+        "position": {
+          "basis": "60px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "type": "ia.container.flex",
+        "props": {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "style": {
+            "backgroundColor": "#2286C8",
+            "color": "#E6F5FB",
+            "fontSize": "24px",
+            "fontWeight": "bold"
+          }
+        },
+        "children": [
+          {
+            "meta": {
+              "name": "MenuLabel"
+            },
+            "type": "ia.display.label",
+            "props": {
+              "text": "Menu Navigation Bar"
+            },
+            "position": {
+              "grow": 1
+            }
+          }
+        ]
+      },
+      {
+        "meta": {
+          "name": "MainContentArea"
+        },
+        "position": {
+          "grow": 1,
+          "shrink": 1
+        },
+        "type": "ia.container.flex",
+        "props": {
+          "direction": "column",
+          "alignItems": "center",
+          "justifyContent": "space-around",
+          "style": {
+            "backgroundColor": "#E6F5FB",
+            "padding": "20px"
+          }
+        },
+        "children": [
+          {
+            "meta": {
+              "name": "Button1"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 1",
+              "style": {
+                "fontFamily": "Arial",
+                "fontSize": "18px",
+                "fontWeight": "bold",
+                "borderStyle": "solid",
+                "borderWidth": "2px",
+                "borderColor": "#12182D",
+                "borderRadius": "5px",
+                "backgroundColor": "#FFD700",
+                "color": "#12182D",
+                "boxShadow": "3px 3px 10px rgba(0,0,0,0.2)"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          },
+          {
+            "meta": {
+              "name": "Button2"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 2",
+              "style": {
+                "fontFamily": "Verdana",
+                "fontSize": "16px",
+                "fontWeight": "normal",
+                "borderStyle": "dashed",
+                "borderWidth": "3px",
+                "borderColor": "#C0C0C0",
+                "backgroundColor": "#F0F0F0",
+                "color": "#12182D",
+                "boxShadow": "5px 5px 15px rgba(0,0,0,0.3)"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          },
+          {
+            "meta": {
+              "name": "Button3"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 3",
+              "style": {
+                "fontFamily": "Georgia",
+                "fontSize": "20px",
+                "fontWeight": "bolder",
+                "borderStyle": "double",
+                "borderWidth": "4px",
+                "borderColor": "#008080",
+                "backgroundColor": "#ADD8E6",
+                "color": "#12182D",
+                "boxShadow": "2px 2px 5px rgba(0,0,0,0.1) inset"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          },
+          {
+            "meta": {
+              "name": "Button4"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 4",
+              "style": {
+                "fontFamily": "Palatino Linotype",
+                "fontSize": "17px",
+                "fontWeight": "lighter",
+                "borderStyle": "dotted",
+                "borderWidth": "2px",
+                "borderColor": "#A52A2A",
+                "borderRadius": "10px",
+                "backgroundColor": "#FFB6C1",
+                "color": "#12182D",
+                "boxShadow": "-3px -3px 8px rgba(0,0,0,0.25)"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          },
+          {
+            "meta": {
+              "name": "Button5"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 5",
+              "style": {
+                "fontFamily": "Times New Roman",
+                "fontSize": "19px",
+                "fontWeight": "bold",
+                "borderStyle": "ridge",
+                "borderWidth": "5px",
+                "borderColor": "#DAA520",
+                "backgroundColor": "#FFEC8B",
+                "color": "#12182D",
+                "boxShadow": "0 0 12px rgba(255,165,0,0.5)"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          },
+          {
+            "meta": {
+              "name": "Button6"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 6",
+              "style": {
+                "fontFamily": "Courier New",
+                "fontSize": "15px",
+                "fontWeight": "normal",
+                "borderStyle": "inset",
+                "borderWidth": "3px",
+                "borderColor": "#9ACD32",
+                "backgroundColor": "#E0FFFF",
+                "color": "#12182D",
+                "boxShadow": "6px 6px 18px rgba(144,238,144,0.4)"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          },
+          {
+            "meta": {
+              "name": "Button7"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 7",
+              "style": {
+                "fontFamily": "Trebuchet MS",
+                "fontSize": "21px",
+                "fontWeight": "900",
+                "borderStyle": "outset",
+                "borderWidth": "4px",
+                "borderColor": "#FF6347",
+                "borderRadius": "20px",
+                "backgroundColor": "#FFCCBC",
+                "color": "#12182D",
+                "boxShadow": "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          },
+          {
+            "meta": {
+              "name": "Button8"
+            },
+            "type": "ia.input.button",
+            "props": {
+              "text": "Action Button 8",
+              "style": {
+                "fontFamily": "Consolas",
+                "fontSize": "14px",
+                "fontWeight": "bold",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "borderColor": "#6A5ACD",
+                "backgroundColor": "#D8BFD8",
+                "color": "#12182D",
+                "boxShadow": "0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)"
+              }
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 0,
+              "shrink": 0
+            }
+          }
+        ]
+      },
+      {
+        "meta": {
+          "name": "FooterBar"
+        },
+        "position": {
+          "basis": "40px",
+          "grow": 0,
+          "shrink": 0
+        },
+        "type": "ia.container.flex",
+        "props": {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "style": {
+            "backgroundColor": "#12182D",
+            "color": "#E6F5FB",
+            "fontSize": "18px"
+          }
+        },
+        "children": [
+          {
+            "meta": {
+              "name": "StatusLabel"
+            },
+            "type": "ia.display.label",
+            "props": {
+              "text": "Status Display Footer"
+            },
+            "position": {
+              "grow": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

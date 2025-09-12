@@ -1,0 +1,52 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 500,
+      "width": 500
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "height": 50,
+          "width": 150,
+          "x": 50,
+          "y": 50
+        },
+        "props": {
+          "text": "This is a basic test view."
+        },
+        "type": "ia.display.label"
+      },
+    {
+      "type": "ia.display.label",
+      "props": {
+        "style": {
+          "backgroundColor": "#000000",
+          "color": "#FF0000"
+        },
+        "text": "I have Style!"
+      },
+      "meta": {
+        "name": "Label_1"
+      },
+      "position": {
+        "height": 38,
+        "width": 163,
+        "x": 67,
+        "y": 110
+      }
+    }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

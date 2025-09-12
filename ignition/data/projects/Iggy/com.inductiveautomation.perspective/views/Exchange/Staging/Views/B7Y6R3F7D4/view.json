@@ -1,0 +1,204 @@
+[
+  {
+    "custom": {},
+    "params": {},
+    "props": {},
+    "root": {
+      "meta": {
+        "name": "root"
+      },
+      "props": {
+        "direction": "column"
+      },
+      "type": "ia.container.flex",
+      "children": [
+        {
+          "meta": {
+            "name": "LabelComponent"
+          },
+          "position": {
+            "basis": "32px",
+            "grow": 0,
+            "shrink": 0,
+            "align": "start",
+            "display": true
+          },
+          "props": {
+            "text": "Hello, Perspective!"
+          },
+          "type": "ia.display.label"
+        },
+        {
+          "meta": {
+            "name": "ButtonComponent"
+          },
+          "position": {
+            "basis": "34px",
+            "grow": 0,
+            "shrink": 0,
+            "align": "start",
+            "display": true
+          },
+          "type": "ia.input.button"
+        },
+        {
+          "meta": {
+            "name": "PieChartComponent"
+          },
+          "position": {
+            "basis": "250px",
+            "grow": 1,
+            "shrink": 1,
+            "align": "stretch",
+            "display": true
+          },
+          "props": {
+            "colors": [
+              "#3366CC",
+              "#EC4B3D",
+              "#4FC86C",
+              "#00A9C6",
+              "#E69300"
+            ],
+            "data": [
+              {
+                "count": 36,
+                "flavor": "Pumpkin"
+              },
+              {
+                "count": 17,
+                "flavor": "Pecan"
+              },
+              {
+                "count": 14,
+                "flavor": "Apple"
+              }
+            ],
+            "title": "Favorite Pie Flavors"
+          },
+          "type": "ia.chart.pie"
+        },
+        {
+          "meta": {
+            "name": "ImageComponent"
+          },
+          "position": {
+            "basis": "150px",
+            "grow": 1,
+            "shrink": 1,
+            "align": "stretch",
+            "display": true
+          },
+          "type": "ia.display.image"
+        },
+        {
+          "meta": {
+            "name": "ProgressComponent"
+          },
+          "position": {
+            "basis": "20px",
+            "grow": 0,
+            "shrink": 0,
+            "align": "start",
+            "display": true
+          },
+          "type": "ia.display.progress"
+        },
+        {
+          "meta": {
+            "name": "DropdownComponent"
+          },
+          "position": {
+            "basis": "36px",
+            "grow": 0,
+            "shrink": 0,
+            "align": "start",
+            "display": true
+          },
+          "props": {
+            "maxMenuHeight": 350,
+            "minMenuHeight": 150,
+            "multiSelect": false,
+            "optionStyle": {
+              "classes": ""
+            },
+            "options": [
+              {
+                "isDisabled": false,
+                "label": "Option 1",
+                "value": "value1"
+              },
+              {
+                "isDisabled": false,
+                "label": "Option 2",
+                "value": "value2"
+              }
+            ],
+            "placeholder": {
+              "color": "",
+              "icon": {
+                "color": "",
+                "path": "",
+                "style": {
+                  "height": "16px",
+                  "width": "16px"
+                }
+              },
+              "text": "Select..."
+            },
+            "style": {
+              "classes": ""
+            },
+            "textAlign": "left",
+            "validation": {
+              "constraints": {
+                "required": {
+                  "enabled": false
+                }
+              },
+              "icon": {
+                "color": "",
+                "path": ""
+              },
+              "message": {},
+              "style": {
+                "classes": ""
+              }
+            },
+            "wrapMultiSelectValues": true
+          },
+          "type": "ia.input.dropdown"
+        },
+        {
+          "meta": {
+            "name": "TextFieldComponent"
+          },
+          "position": {
+            "basis": "32px",
+            "grow": 0,
+            "shrink": 0,
+            "align": "start",
+            "display": true
+          },
+          "type": "ia.input.text-field"
+        },
+        {
+          "meta": {
+            "name": "IconComponent"
+          },
+          "position": {
+            "basis": "30px",
+            "grow": 0,
+            "shrink": 0,
+            "align": "start",
+            "display": true
+          },
+          "props": {
+            "path": "material/star"
+          },
+          "type": "ia.display.icon"
+        }
+      ]
+    }
+  }
+]

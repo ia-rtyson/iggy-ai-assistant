@@ -1,0 +1,160 @@
+{
+  "type": "ia.container.coord",
+  "version": 1,
+  "props": {
+    "mode": "fixed"
+  },
+  "meta": {
+    "name": "RoundedOrangeDog"
+  },
+  "position": {
+    "width": 500,
+    "height": 400
+  },
+  "custom": {},
+  "children": [
+    {
+      "type": "ia.display.label",
+      "version": 0,
+      "props": {
+        "text": "",
+        "style": {
+          "backgroundColor": "orange",
+          "borderRadius": "50%"
+        }
+      },
+      "meta": {
+        "name": "Head"
+      },
+      "position": {
+        "x": 50,
+        "y": 100,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "type": "ia.display.label",
+      "version": 0,
+      "props": {
+        "text": "",
+        "style": {
+          "backgroundColor": "orange",
+          "borderRadius": "50px"
+        }
+      },
+      "meta": {
+        "name": "Body"
+      },
+      "position": {
+        "x": 100,
+        "y": 150,
+        "width": 250,
+        "height": 100
+      }
+    },
+    {
+      "type": "ia.display.label",
+      "version": 0,
+      "props": {
+        "text": "",
+        "style": {
+          "backgroundColor": "orange",
+          "borderRadius": "20px"
+        }
+      },
+      "meta": {
+        "name": "Tail"
+      },
+      "position": {
+        "x": 350,
+        "y": 120,
+        "width": 80,
+        "height": 40,
+        "rotate": {
+          "angle": "-30deg"
+        }
+      }
+    },
+    {
+      "type": "ia.display.label",
+      "version": 0,
+      "props": {
+        "text": "",
+        "style": {
+          "backgroundColor": "orange",
+          "borderRadius": "20px"
+        }
+      },
+      "meta": {
+        "name": "Leg1"
+      },
+      "position": {
+        "x": 120,
+        "y": 250,
+        "width": 40,
+        "height": 80
+      }
+    },
+    {
+      "type": "ia.display.label",
+      "version": 0,
+      "props": {
+        "text": "",
+        "style": {
+          "backgroundColor": "orange",
+          "borderRadius": "20px"
+        }
+      },
+      "meta": {
+        "name": "Leg2"
+      },
+      "position": {
+        "x": 170,
+        "y": 250,
+        "width": 40,
+        "height": 80
+      }
+    },
+    {
+      "type": "ia.display.label",
+      "version": 0,
+      "props": {
+        "text": "",
+        "style": {
+          "backgroundColor": "orange",
+          "borderRadius": "20px"
+        }
+      },
+      "meta": {
+        "name": "Leg3"
+      },
+      "position": {
+        "x": 220,
+        "y": 250,
+        "width": 40,
+        "height": 80
+      }
+    },
+    {
+      "type": "ia.display.label",
+      "version": 0,
+      "props": {
+        "text": "",
+        "style": {
+          "backgroundColor": "orange",
+          "borderRadius": "20px"
+        }
+      },
+      "meta": {
+        "name": "Leg4"
+      },
+      "position": {
+        "x": 270,
+        "y": 250,
+        "width": 40,
+        "height": 80
+      }
+    }
+  ]
+}

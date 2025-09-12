@@ -1,0 +1,168 @@
+{
+  "custom": {
+    "data": [
+      {
+        "artifact_type_id": 2,
+        "data": "# Define the project and message handler\nproject \u003d \"MyProject\"\nmessageHandler \u003d \"MyMessageHandler\"\n\n# Define the payload\npayload \u003d {\"key1\": \"value1\", \"key2\": \"value2\"}\n\n# Send the message\nsystem.util.sendMessage(project, messageHandler, payload)",
+        "description": "Example gateway script",
+        "final": false,
+        "id": 18,
+        "ignition_chat_history_id": 12,
+        "public": false,
+        "timestamp": 1755113867918
+      }
+    ]
+  },
+  "params": {
+    "item_id": 18
+  },
+  "propConfig": {
+    "custom.data": {
+      "binding": {
+        "config": {
+          "enableValueCache": false,
+          "parameters": {
+            "id": "{view.params.item_id}"
+          },
+          "queryPath": "Exchange/Iggy/Artifact/select_artifact",
+          "returnFormat": "json"
+        },
+        "transforms": [
+          {
+            "code": "\t\n\treturn value",
+            "type": "script"
+          }
+        ],
+        "type": "query"
+      },
+      "persistent": true
+    },
+    "params.item_id": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "shrink": 0
+            },
+            "props": {
+              "style": {
+                "classes": "component/title"
+              },
+              "text": "Code Snip"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "EmbeddedView"
+                },
+                "position": {
+                  "basis": "68px",
+                  "display": false,
+                  "shrink": 0
+                },
+                "propConfig": {
+                  "props.params.toCopy": {
+                    "binding": {
+                      "config": {
+                        "path": "view.custom.data[0].data"
+                      },
+                      "transforms": [
+                        {
+                          "code": "\treturn str(value.replace(\"```python\",\u0027\u0027))",
+                          "type": "script"
+                        }
+                      ],
+                      "type": "property"
+                    }
+                  }
+                },
+                "props": {
+                  "path": "Widgets/Copy To Clipboard"
+                },
+                "type": "ia.display.view"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "200px"
+            },
+            "props": {
+              "justify": "flex-end"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "50px",
+          "shrink": 0
+        },
+        "props": {
+          "justify": "space-between",
+          "style": {
+            "borderBottomColor": "--neutral-20",
+            "borderBottomStyle": "solid",
+            "borderBottomWidth": "3px",
+            "paddingLeft": "20px"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "Markdown"
+        },
+        "position": {
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.source": {
+            "binding": {
+              "config": {
+                "expression": "\u0027```python\\n\u0027 + {view.custom.data[0].data} + \u0027\\n```\u0027"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "paddingBottom": "20px",
+            "paddingLeft": "20px",
+            "paddingRight": "20px",
+            "paddingTop": "10px"
+          }
+        },
+        "type": "ia.display.markdown"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "artifact/root"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

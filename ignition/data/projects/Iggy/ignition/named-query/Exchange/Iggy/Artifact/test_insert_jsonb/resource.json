@@ -1,0 +1,40 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "postgres",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "bb90e7d0bfb552b3c7f48729a173a67d95148d3960123782edac2f218f1bcb93",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "mraybourn",
+      "timestamp": "2025-08-13T19:21:30Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "data",
+        "sqlType": 7
+      }
+    ]
+  }
+}

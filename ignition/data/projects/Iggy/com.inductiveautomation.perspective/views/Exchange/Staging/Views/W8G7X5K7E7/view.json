@@ -1,0 +1,263 @@
+
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1280,
+      "height": 768
+    }
+  },
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.flex",
+    "props": {
+      "direction": "column"
+    },
+    "children": [
+      {
+        "meta": {
+          "name": "HeaderContainer"
+        },
+        "position": {
+          "basis": "70px",
+          "shrink": 0
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2286C8",
+            "alignItems": "center",
+            "justifyContent": "center"
+          }
+        },
+        "type": "ia.container.flex",
+        "children": [
+          {
+            "meta": {
+              "name": "HeaderLabel"
+            },
+            "position": {},
+            "props": {
+              "text": "My Application Header",
+              "style": {
+                "color": "#E6F5FB",
+                "fontSize": "30px",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ]
+      },
+      {
+        "meta": {
+          "name": "BodyContainer"
+        },
+        "position": {
+          "grow": 1
+        },
+        "props": {
+          "direction": "row"
+        },
+        "type": "ia.container.flex",
+        "children": [
+          {
+            "meta": {
+              "name": "NavigationContainer"
+            },
+            "position": {
+              "basis": "250px",
+              "shrink": 0
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#12182D",
+                "padding": "10px"
+              }
+            },
+            "type": "ia.container.flex",
+            "children": [
+              {
+                "meta": {
+                  "name": "MenuTree"
+                },
+                "position": {
+                  "grow": 1
+                },
+                "props": {
+                  "items": [
+                    { "label": { "text": "Home" }, "target": "/" },
+                    { "label": { "text": "Dashboard" }, "target": "/dashboard" },
+                    { "label": { "text": "Reports" }, "target": "/reports" },
+                    { "label": { "text": "Settings" }, "target": "/settings" }
+                  ],
+                  "style": {
+                    "color": "#E6F5FB"
+                  }
+                },
+                "type": "ia.navigation.menutree"
+              }
+            ]
+          },
+          {
+            "meta": {
+              "name": "MainContentContainer"
+            },
+            "position": {
+              "grow": 1
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "backgroundColor": "#E6F5FB",
+                "padding": "20px",
+                "gap": "15px",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "overflowY": "auto"
+              }
+            },
+            "type": "ia.container.flex",
+            "children": [
+              {
+                "meta": { "name": "Label1" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label One: Default Style",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "16px",
+                    "padding": "10px",
+                    "border": "1px solid #00A368",
+                    "borderRadius": "5px"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": { "name": "Label2" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label Two: Bold & Larger",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "20px",
+                    "fontWeight": "bold",
+                    "padding": "10px 15px",
+                    "backgroundColor": "#ECF0F1",
+                    "borderRadius": "8px",
+                    "boxShadow": "3px 3px 5px rgba(0,0,0,0.2)"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": { "name": "Label3" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label Three: Italic & Different Font",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "18px",
+                    "fontStyle": "italic",
+                    "fontFamily": "Georgia, serif",
+                    "padding": "12px",
+                    "borderBottom": "2px dashed #E9BF1E",
+                    "boxShadow": "0 2px 4px rgba(0,0,0,0.1)"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": { "name": "Label4" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label Four: Underlined & Centered",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "16px",
+                    "textDecorationLine": "underline",
+                    "textAlign": "center",
+                    "padding": "10px",
+                    "backgroundColor": "#D6EAF8",
+                    "borderRadius": "10px",
+                    "boxShadow": "inset 0 0 5px rgba(0,0,0,0.1)"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": { "name": "Label5" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label Five: Uppercase & Thick Border",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "17px",
+                    "textTransform": "uppercase",
+                    "padding": "10px",
+                    "border": "3px solid #F79120",
+                    "boxShadow": "5px 5px 10px rgba(0,0,0,0.3)"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": { "name": "Label6" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label Six: Left Border & Background",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "22px",
+                    "fontWeight": "bold",
+                    "padding": "10px",
+                    "borderLeft": "5px solid #2286C8",
+                    "backgroundColor": "#FDFEFE"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": { "name": "Label7" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label Seven: Rounded and Subtle Shadow",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "16px",
+                    "padding": "8px 12px",
+                    "border": "1px solid #BFBFBF",
+                    "borderRadius": "20px",
+                    "boxShadow": "1px 1px 3px rgba(0,0,0,0.15)"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": { "name": "Label8" },
+                "position": { "basis": "auto" },
+                "props": {
+                  "text": "Label Eight: Outline Effect",
+                  "style": {
+                    "color": "#12182D",
+                    "fontSize": "19px",
+                    "fontWeight": "bold",
+                    "padding": "10px",
+                    "outlineStyle": "solid",
+                    "outlineWidth": "2px",
+                    "outlineColor": "#00A368",
+                    "backgroundColor": "#F4F6F6"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

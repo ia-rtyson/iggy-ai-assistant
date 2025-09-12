@@ -1,0 +1,15 @@
+{
+  "version": 1, 
+  "restricted": false, 
+  "scope": "G", 
+  "overridable": true, 
+  "files": [
+    "view.json"
+  ], 
+  "attributes": {
+    "lastModification": {
+      "actor": "external", 
+      "timestamp": "2025-08-28T22:24:10Z"
+    }
+  }
+}

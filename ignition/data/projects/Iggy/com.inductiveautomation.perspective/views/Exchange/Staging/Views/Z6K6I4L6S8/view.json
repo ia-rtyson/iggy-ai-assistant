@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "name": "SimpleTagViewFlex"
+  },
+  "root": {
+    "type": "ia.display.flex",
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "components": [
+      {
+        "type": "ia.display.label",
+        "meta": {
+          "name": "Label"
+        },
+        "props": {
+          "text": "Motor RPM"
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "type": "tag",
+              "config": {
+                "bidirectional": false,
+                "mode": "direct",
+                "tagPath": "[default]Motor RPM"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

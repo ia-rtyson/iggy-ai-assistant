@@ -1,0 +1,150 @@
+
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex",
+    "children": [
+      {
+        "meta": {
+          "name": "HeaderContainer"
+        },
+        "position": {
+          "basis": "60px",
+          "grow": 0,
+          "shrink": 0,
+          "align": "stretch"
+        },
+        "props": {
+          "direction": "row",
+          "style": {
+            "backgroundColor": "#3F51B5",
+            "alignItems": "center",
+            "paddingLeft": "20px"
+          }
+        },
+        "type": "ia.container.flex",
+        "children": [
+          {
+            "meta": {
+              "name": "HeaderTitle"
+            },
+            "position": {
+              "grow": 1,
+              "align": "center"
+            },
+            "props": {
+              "text": "My Application",
+              "style": {
+                "color": "white",
+                "fontSize": "24px",
+                "fontWeight": "bold"
+              }
+            },
+            "type": "ia.display.label"
+          }
+        ]
+      },
+      {
+        "meta": {
+          "name": "MainContentContainer"
+        },
+        "position": {
+          "grow": 1,
+          "shrink": 1,
+          "align": "stretch"
+        },
+        "props": {
+          "direction": "row"
+        },
+        "type": "ia.container.flex",
+        "children": [
+          {
+            "meta": {
+              "name": "SideMenu"
+            },
+            "position": {
+              "basis": "200px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "stretch"
+            },
+            "props": {
+              "items": [
+                {
+                  "label": {
+                    "text": "Dashboard",
+                    "icon": {
+                      "path": "material/dashboard"
+                    }
+                  },
+                  "target": "",
+                  "enabled": true,
+                  "visible": true
+                },
+                {
+                  "label": {
+                    "text": "Reports",
+                    "icon": {
+                      "path": "material/assessment"
+                    }
+                  },
+                  "target": "",
+                  "enabled": true,
+                  "visible": true
+                },
+                {
+                  "label": {
+                    "text": "Settings",
+                    "icon": {
+                      "path": "material/settings"
+                    }
+                  },
+                  "target": "",
+                  "enabled": true,
+                  "visible": true
+                }
+              ],
+              "style": {
+                "backgroundColor": "#F0F0F0",
+                "borderRight": "1px solid #CCC"
+              }
+            },
+            "type": "ia.navigation.menutree"
+          },
+          {
+            "meta": {
+              "name": "DataTable"
+            },
+            "position": {
+              "grow": 1,
+              "shrink": 1,
+              "align": "stretch"
+            },
+            "props": {
+              "data": [
+                {"city": "Folsom", "country": "United States", "population": 77271},
+                {"city": "Helsinki", "country": "Finland", "population": 635591},
+                {"city": "Jakarta", "country": "Indonesia", "population": 10187595},
+                {"city": "Madrid", "country": "Spain", "population": 3233527},
+                {"city": "Prague", "country": "Czech Republic", "population": 1241664},
+                {"city": "San Diego", "country": "United States", "population": 1406630},
+                {"city": "San Francisco", "country": "United States", "population": 884363},
+                {"city": "Shanghai", "country": "China", "population": 24153000},
+                {"city": "Tokyo", "country": "Japan", "population": 13617000}
+              ]
+            },
+            "type": "ia.display.table"
+          }
+        ]
+      }
+    ]
+  }
+}

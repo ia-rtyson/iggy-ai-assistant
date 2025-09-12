@@ -1,0 +1,55 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "Form Configs",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "f33fb5edd3cddfe7ab334a7edce745f89aade3c98618e8a22a86be0d79db7115",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "mraybourn",
+      "timestamp": "2025-08-12T20:32:00Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "uuid",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "session_id",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "type",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "json_data",
+        "sqlType": 7
+      }
+    ]
+  }
+}

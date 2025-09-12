@@ -1,0 +1,371 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Form"
+        },
+        "position": {
+          "basis": "400px",
+          "grow": 1
+        },
+        "props": {
+          "actions": {
+            "justify": "end",
+            "submit": {
+              "disabled": true,
+              "fireSubmissionEvent": true,
+              "text": "Submit Feedback"
+            }
+          },
+          "columns": {
+            "align": "stretch",
+            "items": [
+              {
+                "rows": {
+                  "align": "start",
+                  "items": [
+                    {
+                      "widgets": [
+                        {
+                          "id": "text_input",
+                          "info": {
+                            "text": "A standard text input field.",
+                            "type": "caption"
+                          },
+                          "label": {
+                            "text": "Text Input"
+                          },
+                          "text": {},
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "email": {},
+                          "id": "email_input",
+                          "label": {
+                            "text": "Email Input"
+                          },
+                          "type": "email"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "url_input",
+                          "label": {
+                            "text": "URL Input"
+                          },
+                          "type": "url",
+                          "url": {}
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "password_input",
+                          "label": {
+                            "text": "Password Input"
+                          },
+                          "password": {},
+                          "type": "password"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "number_input",
+                          "label": {
+                            "text": "Number Input"
+                          },
+                          "number": {},
+                          "type": "number"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "tel_input",
+                          "label": {
+                            "text": "Telephone Input"
+                          },
+                          "tel": {},
+                          "type": "tel"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "textarea_input",
+                          "label": {
+                            "text": "Text Area"
+                          },
+                          "text-area": {},
+                          "type": "text-area"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "slider_input",
+                          "label": {
+                            "text": "Slider"
+                          },
+                          "slider": {},
+                          "type": "slider"
+                        }
+                      ]
+                    }
+                  ],
+                  "justify": "start",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "style": {
+                  "classes": ""
+                },
+                "visible": true
+              },
+              {
+                "rows": {
+                  "items": [
+                    {
+                      "widgets": [
+                        {
+                          "id": "radio_input",
+                          "info": {
+                            "text": "Select one of these options.",
+                            "type": "tooltip"
+                          },
+                          "label": {
+                            "text": "Radio Group"
+                          },
+                          "radio": {
+                            "options": [
+                              {
+                                "text": "Option 1",
+                                "value": "option1"
+                              },
+                              {
+                                "text": "Option 2",
+                                "value": "option2"
+                              },
+                              {
+                                "text": "Option 3",
+                                "value": "option3"
+                              }
+                            ]
+                          },
+                          "type": "radio"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "checkbox": {
+                            "options": [
+                              {
+                                "text": "text",
+                                "triState": false,
+                                "value": "text value"
+                              },
+                              {
+                                "text": "text2",
+                                "triState": false,
+                                "value": "other text value"
+                              }
+                            ],
+                            "type": "string"
+                          },
+                          "id": "checkbox_input",
+                          "label": {
+                            "text": "Checkbox"
+                          },
+                          "type": "checkbox"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "toggle_input",
+                          "label": {
+                            "text": "Toggle Switch"
+                          },
+                          "toggle": {
+                            "options": [
+                              {
+                                "text": "Power"
+                              }
+                            ],
+                            "type": "boolean"
+                          },
+                          "type": "toggle"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "dropdown": {
+                            "options": [
+                              {
+                                "label": "Item 1",
+                                "value": "item1"
+                              },
+                              {
+                                "label": "Item 2",
+                                "value": "item2"
+                              },
+                              {
+                                "label": "Item 3",
+                                "value": "item3"
+                              }
+                            ]
+                          },
+                          "id": "dropdown_input",
+                          "label": {
+                            "text": "Dropdown"
+                          },
+                          "type": "dropdown"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "date-picker": {},
+                          "id": "datepicker_input",
+                          "label": {
+                            "text": "Date Picker"
+                          },
+                          "type": "date-picker"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "id": "timepicker_input",
+                          "label": {
+                            "text": "Time Picker"
+                          },
+                          "time-picker": {},
+                          "type": "time-picker"
+                        }
+                      ]
+                    },
+                    {
+                      "widgets": [
+                        {
+                          "date-time-picker": {},
+                          "id": "datetimepicker_input",
+                          "label": {
+                            "text": "Date/Time Picker"
+                          },
+                          "type": "date-time-picker"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "data": {
+            "checkbox_input": [
+              false,
+              false
+            ],
+            "datepicker_input": {
+              "formattedValue": "Aug 7, 2025 12:00 AM",
+              "value": {
+                "$": [
+                  "ts",
+                  0,
+                  1754894020405
+                ],
+                "$ts": 1754550000000
+              }
+            },
+            "datetimepicker_input": {
+              "formattedValue": "Aug 21, 2025 12:00 AM",
+              "value": {
+                "$": [
+                  "ts",
+                  0,
+                  1754894020405
+                ],
+                "$ts": 1755759600000
+              }
+            },
+            "dropdown_input": "item3",
+            "email_input": "a",
+            "password_input": "a",
+            "radio_input": "option1",
+            "slider_input": 0,
+            "tel_input": "a",
+            "text_input": "a",
+            "textarea_input": "a",
+            "timepicker_input": {
+              "formattedValue": "1:00 AM",
+              "value": {
+                "hours": 1,
+                "minutes": 0,
+                "seconds": 0
+              }
+            },
+            "toggle_input": false,
+            "url_input": "a"
+          },
+          "name": "UIFeedbackForm",
+          "style": {
+            "classes": "p-4"
+          },
+          "validation": {
+            "isInvalid": true,
+            "status": {
+              "checkbox_input": "valid",
+              "datepicker_input": "valid",
+              "datetimepicker_input": "valid",
+              "dropdown_input": "valid",
+              "email_input": "typeMismatch",
+              "number_input": "valid",
+              "password_input": "valid",
+              "radio_input": "valid",
+              "slider_input": "valid",
+              "tel_input": "valid",
+              "text_input": "valid",
+              "textarea_input": "valid",
+              "timepicker_input": "valid",
+              "toggle_input": "valid",
+              "url_input": "typeMismatch"
+            }
+          }
+        },
+        "type": "ia.input.form"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

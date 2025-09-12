@@ -1,0 +1,62 @@
+{
+  "custom": {},
+  "params": {
+    "toCopy": "IA Attendees:\nsecond"
+  },
+  "propConfig": {
+    "params.toCopy": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 231,
+      "width": 292
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "IFrame"
+        },
+        "position": {
+          "grow": 1
+        },
+        "propConfig": {
+          "props.src": {
+            "binding": {
+              "config": {
+                "path": "view.params.toCopy"
+              },
+              "transforms": [
+                {
+                  "code": "\tfrom exchange.clipboard.clipboard import copyTo\n\treturn copyTo(value, gatewayAddress\u003dself.session.props.gateway.address)",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "allowFullScreen": true,
+          "referrerPolicy": "unsafe-url",
+          "style": {
+            "classes": "exchange/copy-to-clipboard/resource",
+            "zIndex": 1
+          }
+        },
+        "type": "ia.display.iframe"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

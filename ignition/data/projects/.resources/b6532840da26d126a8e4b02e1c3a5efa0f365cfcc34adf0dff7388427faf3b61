@@ -1,0 +1,20 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "AlarmStatusTable"
+        },
+        "position": {
+          "height": 500,
+          "width": 800
+        },
+        "type": "ia.display.alarmstatustable"
+      }
+    ],
+    "type": "ia.container.coord"
+  }
+}

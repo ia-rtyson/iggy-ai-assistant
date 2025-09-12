@@ -1,0 +1,18 @@
+{
+  "scope": "G",
+  "documentation": "vertex - seems fine at first in the json, but most of the widgets are missing their main property which leaves them empty/invisible. also, columns were set to start instead of stretch for some reason.",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "view.json",
+    "thumbnail.png"
+  ],
+  "attributes": {
+    "lastModificationSignature": "76fdcd6bc84f5c21c332f298d336718baf5892a8e22359527b472c8c4a362395",
+    "lastModification": {
+      "actor": "mraybourn",
+      "timestamp": "2025-08-12T20:31:59Z"
+    }
+  }
+}

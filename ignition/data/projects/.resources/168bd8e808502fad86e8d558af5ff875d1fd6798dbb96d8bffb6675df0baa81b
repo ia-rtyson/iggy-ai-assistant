@@ -1,0 +1,128 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "style": {
+      "backgroundColor": "#FFDBAC",
+      "borderRadius": "50%",
+      "height": "600px",
+      "width": "600px"
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "leftEye"
+        },
+        "position": {
+          "height": 100,
+          "width": 100,
+          "x": 150,
+          "y": 150
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "white",
+            "borderRadius": "50%"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "rightEye"
+        },
+        "position": {
+          "height": 100,
+          "width": 100,
+          "x": 350,
+          "y": 150
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "white",
+            "borderRadius": "50%"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "leftPupil"
+        },
+        "position": {
+          "height": 30,
+          "width": 30,
+          "x": 185,
+          "y": 185
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "black",
+            "borderRadius": "50%"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "rightPupil"
+        },
+        "position": {
+          "height": 30,
+          "width": 30,
+          "x": 385,
+          "y": 185
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "black",
+            "borderRadius": "50%"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "nose"
+        },
+        "position": {
+          "height": 60,
+          "width": 40,
+          "x": 280,
+          "y": 300
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#C09D7A"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "mouth"
+        },
+        "position": {
+          "height": 50,
+          "width": 150,
+          "x": 225,
+          "y": 400
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "red",
+            "borderBottomLeftRadius": "50px",
+            "borderBottomRightRadius": "50px"
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}
