@@ -1,0 +1,410 @@
+
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.column",
+    "children": [
+      {
+        "meta": {
+          "name": "TopSectionContainer"
+        },
+        "position": {
+          "height": "auto"
+        },
+        "props": {
+          "direction": "row",
+          "alignItems": "center",
+          "justifyContent": "space-around",
+          "style": {
+            "minHeight": "250px",
+            "padding": "10px",
+            "borderBottom": "1px solid #ccc"
+          }
+        },
+        "type": "ia.container.flex",
+        "children": [
+          {
+            "meta": {
+              "name": "Tank1Group"
+            },
+            "position": {
+              "basis": "45%",
+              "grow": 1,
+              "shrink": 1,
+              "align": "stretch"
+            },
+            "props": {
+              "direction": "column",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "style": {
+                "padding": "5px"
+              }
+            },
+            "type": "ia.container.flex",
+            "children": [
+              {
+                "meta": {
+                  "name": "Tank1Label"
+                },
+                "position": {
+                  "basis": "32px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "Tank 1"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Tank1Vessel"
+                },
+                "position": {
+                  "basis": "100px",
+                  "grow": 1,
+                  "shrink": 1
+                },
+                "props": {},
+                "type": "ia.symbol.vessel"
+              },
+              {
+                "meta": {
+                  "name": "Tank1FlowLabel"
+                },
+                "position": {
+                  "basis": "32px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "Flow: 120 L/min"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Tank1Thermometer"
+                },
+                "position": {
+                  "basis": "100px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "value": 75,
+                  "intervals": [
+                    { "color": "#47A9E5", "high": 25, "low": 0 },
+                    { "color": "#B394EF", "high": 75, "low": 25 },
+                    { "color": "#DB3939", "high": 100, "low": 75 }
+                  ]
+                },
+                "type": "ia.display.thermometer"
+              }
+            ]
+          },
+          {
+            "meta": {
+              "name": "Valve1"
+            },
+            "position": {
+              "basis": "80px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "center"
+            },
+            "props": {},
+            "type": "ia.symbol.valve"
+          },
+          {
+            "meta": {
+              "name": "Tank2Group"
+            },
+            "position": {
+              "basis": "45%",
+              "grow": 1,
+              "shrink": 1,
+              "align": "stretch"
+            },
+            "props": {
+              "direction": "column",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "style": {
+                "padding": "5px"
+              }
+            },
+            "type": "ia.container.flex",
+            "children": [
+              {
+                "meta": {
+                  "name": "Tank2Label"
+                },
+                "position": {
+                  "basis": "32px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "Tank 2"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Tank2Vessel"
+                },
+                "position": {
+                  "basis": "100px",
+                  "grow": 1,
+                  "shrink": 1
+                },
+                "props": {},
+                "type": "ia.symbol.vessel"
+              },
+              {
+                "meta": {
+                  "name": "Tank2FlowLabel"
+                },
+                "position": {
+                  "basis": "32px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "Flow: 90 L/min"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Tank2Thermometer"
+                },
+                "position": {
+                  "basis": "100px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "value": 60,
+                  "intervals": [
+                    { "color": "#47A9E5", "high": 25, "low": 0 },
+                    { "color": "#B394EF", "high": 75, "low": 25 },
+                    { "color": "#DB3939", "high": 100, "low": 75 }
+                  ]
+                },
+                "type": "ia.display.thermometer"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "meta": {
+          "name": "MiddleSectionContainer"
+        },
+        "position": {
+          "height": "auto"
+        },
+        "props": {
+          "direction": "row",
+          "alignItems": "center",
+          "justifyContent": "space-around",
+          "style": {
+            "minHeight": "250px",
+            "padding": "10px",
+            "borderBottom": "1px solid #ccc"
+          }
+        },
+        "type": "ia.container.flex",
+        "children": [
+          {
+            "meta": {
+              "name": "DayTankGroup"
+            },
+            "position": {
+              "basis": "50%",
+              "grow": 1,
+              "shrink": 1,
+              "align": "stretch"
+            },
+            "props": {
+              "direction": "column",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "style": {
+                "padding": "5px"
+              }
+            },
+            "type": "ia.container.flex",
+            "children": [
+              {
+                "meta": {
+                  "name": "DayTankLabel"
+                },
+                "position": {
+                  "basis": "32px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "Day Tank"
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "DayTankVessel"
+                },
+                "position": {
+                  "basis": "100px",
+                  "grow": 1,
+                  "shrink": 1
+                },
+                "props": {},
+                "type": "ia.symbol.vessel"
+              },
+              {
+                "meta": {
+                  "name": "DayTankAmbientTemp"
+                },
+                "position": {
+                  "basis": "100px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "value": 25,
+                  "intervals": [
+                    { "color": "#47A9E5", "high": 15, "low": 0 },
+                    { "color": "#B394EF", "high": 30, "low": 15 },
+                    { "color": "#DB3939", "high": 50, "low": 30 }
+                  ]
+                },
+                "type": "ia.display.thermometer"
+              },
+              {
+                "meta": {
+                  "name": "DayTankHumidityLabel"
+                },
+                "position": {
+                  "basis": "32px",
+                  "grow": 0,
+                  "shrink": 0
+                },
+                "props": {
+                  "text": "Humidity: 65%"
+                },
+                "type": "ia.display.label"
+              }
+            ]
+          },
+          {
+            "meta": {
+              "name": "Valve2"
+            },
+            "position": {
+              "basis": "80px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "center"
+            },
+            "props": {},
+            "type": "ia.symbol.valve"
+          }
+        ]
+      },
+      {
+        "meta": {
+          "name": "BottomSectionContainer"
+        },
+        "position": {
+          "height": "auto"
+        },
+        "props": {
+          "direction": "row",
+          "alignItems": "center",
+          "justifyContent": "space-around",
+          "style": {
+            "minHeight": "200px",
+            "padding": "10px"
+          }
+        },
+        "type": "ia.container.flex",
+        "children": [
+          {
+            "meta": {
+              "name": "Pump1"
+            },
+            "position": {
+              "basis": "100px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "center"
+            },
+            "props": {},
+            "type": "ia.symbol.pump"
+          },
+          {
+            "meta": {
+              "name": "Pump2"
+            },
+            "position": {
+              "basis": "100px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "center"
+            },
+            "props": {},
+            "type": "ia.symbol.pump"
+          },
+          {
+            "meta": {
+              "name": "Valve3"
+            },
+            "position": {
+              "basis": "80px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "center"
+            },
+            "props": {},
+            "type": "ia.symbol.valve"
+          },
+          {
+            "meta": {
+              "name": "Pump3"
+            },
+            "position": {
+              "basis": "100px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "center"
+            },
+            "props": {},
+            "type": "ia.symbol.pump"
+          },
+          {
+            "meta": {
+              "name": "Pump4"
+            },
+            "position": {
+              "basis": "100px",
+              "grow": 0,
+              "shrink": 0,
+              "align": "center"
+            },
+            "props": {},
+            "type": "ia.symbol.pump"
+          }
+        ]
+      }
+    ]
+  }
+}

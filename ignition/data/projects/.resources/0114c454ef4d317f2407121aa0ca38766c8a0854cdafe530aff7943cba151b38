@@ -1,0 +1,14 @@
+{
+  "base": {
+    "style": {
+      "borderColor": "var(--neutral-40)",
+      "borderStyle": "solid",
+      "borderWidth": "1px",
+      "borderTopLeftRadius": "5px",
+      "borderTopRightRadius": "5px",
+      "borderBottomLeftRadius": "5px",
+      "borderBottomRightRadius": "5px",
+      "margin": "5px"
+    }
+  }
+}

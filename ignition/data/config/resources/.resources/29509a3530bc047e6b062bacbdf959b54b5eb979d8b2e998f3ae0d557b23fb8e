@@ -1,0 +1,30 @@
+{
+  "advanced": {
+    "exposedTagsEnabled": false,
+    "gdsPushEnabled": false,
+    "maxSessionCount": 100
+  },
+  "authentication": {
+    "anonymousAccessAllowed": false,
+    "authenticationProfile": "opcua-module"
+  },
+  "endpoint": {
+    "bindAddresses": [
+      "localhost"
+    ],
+    "bindPort": 62541,
+    "endpointAddresses": [
+      "\u003chostname\u003e",
+      "\u003clocalhost\u003e"
+    ],
+    "messageSecurityModes": [
+      "SignAndEncrypt"
+    ],
+    "securityPolicies": [
+      "Basic256Sha256"
+    ]
+  },
+  "redundancy": {
+    "readOnlyWhenInactive": false
+  }
+}

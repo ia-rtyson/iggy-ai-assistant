@@ -1,0 +1,10 @@
+{
+  "classname": "oracle.jdbc.driver.OracleDriver",
+  "defaultPropInstructions": "",
+  "defaultProps": "",
+  "defaultTranslator": "ORACLE",
+  "defaultValidationQuery": "SELECT 1 FROM DUAL",
+  "type": "ORACLE",
+  "urlFormat": "jdbc:oracle:thin:@localhost:1521:test",
+  "urlInstructions": "\u003cbr/\u003eThe format of the Oracle connect URL is:\u003cbr/\u003e\u003ccode\u003ejdbc:oracle:thin:@\u003cb\u003ehost\u003c/b\u003e:\u003cb\u003eport\u003c/b\u003e:\u003cb\u003eSID\u003c/b\u003e\u003c/code\u003e\u003cbr/\u003eWith the three parameters (in bold) \u003cul style\u003d\"list-style-type:none;margin-left:10px;\"\u003e\u003cli\u003e\u003cb\u003ehost\u003c/b\u003e: The host name or IP address of the database server.\u003c/li\u003e\u003cli\u003e\u003cb\u003eport\u003c/b\u003e: The port that the database server is running on. Oracle\u0027s default port is \u003cb\u003e1521\u003c/b\u003e.\u003c/li\u003e\u003cli\u003e\u003cb\u003eSID\u003c/b\u003e: the system ID that identifies the database to connect to.\u003c/li\u003e\u003c/ul\u003e"
+}

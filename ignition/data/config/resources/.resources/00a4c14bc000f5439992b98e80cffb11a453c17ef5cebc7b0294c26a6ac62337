@@ -1,0 +1,17 @@
+{
+  "allowIncoming": true,
+  "allowJavaSerialization": false,
+  "allowedProxyHops": 0,
+  "incomingPingMaxMissed": 12,
+  "incomingPingRateMillis": 5000,
+  "incomingPingTimeoutMillis": 300,
+  "overloadWaitSecs": 60,
+  "proxyInterceptServiceCalls": false,
+  "receiveQueueMax": 100,
+  "requireSSL": true,
+  "requireTwoWayAuth": true,
+  "securityPolicy": "ApprovedOnly",
+  "tempFilesMaxAgeHours": 24,
+  "websocketSessionIdleTimeout": 30000,
+  "whitelist": ""
+}

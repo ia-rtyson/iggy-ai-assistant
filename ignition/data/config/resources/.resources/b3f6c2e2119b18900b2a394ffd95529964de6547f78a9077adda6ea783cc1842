@@ -1,0 +1,6 @@
+{
+  "chartRecordingEnabled": false,
+  "pruneAge": 7,
+  "pruneAgeUnits": "DAY",
+  "recordingsPerChart": 5
+}
