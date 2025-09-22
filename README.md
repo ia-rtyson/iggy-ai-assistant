@@ -5,6 +5,9 @@ To run this project, make sure to have Docker downloaded. Simply run "docker com
 You will need to use your own LLM. This could be a locally hosted LLM using Ollama, for example, or an API key to hosted LLMs such as Gemini, Claud, ChatGPT, etc. This can currently be specified in the n8n workflows. In the future, we would like to take advantage of environment variables to specify the LLM and authentication profiles. The LLM credential is used all of the n8n workflows as seen in this picture below.
 
 The services within this Docker Stack can be found at the following after :
+
 n8n - http://localhost:5678/
+
 Ignition - http://localhost:8088/
+
 pgAdmin(postgres database) - http://localhost:5050/browser/
