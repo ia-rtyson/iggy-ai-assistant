@@ -7,7 +7,9 @@ You will need to use your own LLM. This could be a locally hosted LLM using Olla
 The services within this Docker Stack can be found at the following after :
 
 n8n - http://localhost:5678/
+
 Demo User: admin@local.com
+
 Demo Pass: Password1
 
 Ignition - http://localhost:8088/
